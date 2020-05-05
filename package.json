@@ -1,0 +1,19 @@
+{
+  "name": "bus123",
+  "version": "1.0.0",
+  "description": "tooltip project for zovio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "tooltip",
+    "epub",
+    "constellation"
+  ],
+  "author": "dan moneypenny",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
