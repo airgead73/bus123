@@ -1,18 +1,15 @@
-a.tooltip-bold {
+.tooltip-bold {
   font-style: italic;
   font-weight: bold;
   color: darkslategray;
+  position: relative;
 }
 
-[id^='tooltip'] {
-  color: red;
-}
-
-[id^='tooltip'][aria-hidden='true'] {
+[id^='tooltip-content'][aria-hidden='true'] {
   display: none;
 }
 
-[id^='tooltip'][aria-hidden='false'] {
+[id^='tooltip-content'][aria-hidden='false'] {
   display: block;
   position: absolute;
   background-color: darkslategray;
@@ -24,7 +21,7 @@ a.tooltip-bold {
   z-index: 4600;
 }
 
-[id^='tooltip'][aria-hidden='false']::after {
+[id^='tooltip-content'][aria-hidden='false']::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -36,11 +33,17 @@ a.tooltip-bold {
   z-index: 4600; 
 }
 
-.tooltip-icon {
+.tooltip-icon::before {
+  content: '';
   display: inline-block;
   width: 10px;
   height: 10px;
   background-color:darkslategray;
   margin-left: 3px;
+  margin-right: 2px;
+}
+
+.tooltip-icon:hover {
+  cursor: pointer;
 }
 

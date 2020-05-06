@@ -1,83 +1,57 @@
 (function() {
-  var tipTriggersList = document.querySelectorAll("[data-tooltip='trigger']");
-  var tipTriggers = Array.prototype.slice.call(tipTriggersList);
-  var tipDisplaysList = document.querySelectorAll("[data-tooltip='content']");
-  var tipDisplays = Array.prototype.slice.call(tipDisplaysList);
-  var triggerCount = tipTriggers.length;
-  var displayCount = tipDisplays.length;
+  var tooltipsList = document.querySelectorAll("[id^='tooltip']");
+  var tooltips = Array.prototype.slice.call(tooltipsList);
+  var tooltipCount = tooltips.length;
   var i;
   
-  function setDisplayCoordinates(_trigger, _display) {
-    var y = _trigger.offsetTop - _display.offsetHeight - 10;
-    var x = _trigger.offsetLeft - (_display.offsetWidth * .5) + 8;
-    _display.style.top = y + 'px';
-    _display.style.left = x + 'px';
-  }
-  
-  function handleOpenTips() {
-    var openTip = document.querySelector("[aria-hidden='false']");
-    if(openTip) {
-      openTip.setAttribute('aria-hidden', true);
-      return;
-    } else {
-      return;
-    }
-  }
+  function createTooltip(_contentID, text) {
 
-  function setEsc() {
-    document.addEventListener('keydown', function(e) {
-      if(e.keyCode === 27) {
-        handleOpenTips();
-      }
-    })
+    var tooltipDisplay = document.createElement('span');
+    var tooltipText = document.createTextNode(text);
+
+    tooltipDisplay.setAttribute('id', _contentID);
+    tooltipDisplay.setAttribute('role', 'tooltip');
+    tooltipDisplay.setAttribute('aria-hidden', true);
+
+    tooltipDisplay.append(tooltipText);
+    return tooltipDisplay;
+    
   }
   
-  function handleDisplay(_event, _displayId) {
-    _event.preventDefault();
-    var currentDisplay = document.getElementById(_displayId);
-    var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
-    if(isHidden) {
-      handleOpenTips();    
-      currentDisplay.setAttribute('aria-hidden', false);
-      setDisplayCoordinates(_event.target, currentDisplay);
-    } else if(!isHidden) {
-      currentDisplay.setAttribute('aria-hidden', true);
-    }
-  }
-  
-  function initDisplays(_display) {
-    _display.setAttribute('aria-hidden', true);
-    _display.setAttribute('role', 'tooltip');
-  }
-  
-  function initTriggers(_trigger) {
-    var displayId= _trigger.getAttribute('href').split('#'); 
-    displayId = displayId[1];
-    _trigger.setAttribute('aria-describedby', displayId);
-    _trigger.addEventListener('click', function(e) {
-      handleDisplay(e, displayId);
-    });
+  function initTriggers(_tooltip) {
+    // set trigger attributes
+
+    var tooltipId = _tooltip.getAttribute('id');
+    tooltipId = tooltipId.replace('tooltip', '');
+    var tooltipContent = 'tooltip-content' + tooltipId;
+    var text = _tooltip.getAttribute('title');
+    text = text.trim();
+
+    var trigger = _tooltip.querySelector("[data-tooltip='trigger']");
+    trigger.setAttribute('aria-describedby', tooltipContent);
+
+    // create tooltip display
+
+    var tooltipDisplay = createTooltip(tooltipContent, text);
+
+    _tooltip.appendChild(tooltipDisplay);
+
   }  
  
   function initToolTips() {
-    if(triggerCount === 0 && displayCount === 0) {
+    if(tooltipCount === 0) {
       console.error('Tooltip Error: no tooltips in file.');
       return;
     }
-    if(triggerCount !== displayCount) {
-      console.error('Tooltip Error: number of triggers does not match number of tooltips.');
-      return;
+   
+    for(i = 0; i < tooltipCount; i++) {
+      initTriggers(tooltips[i]);
     }
-    console.log('no errors')
-    for(i = 0; i < triggerCount; i++) {
-      initDisplays(tipDisplays[i]);
-      initTriggers(tipTriggers[i]);
-    }
-    setEsc();
+    
   }
   
   initToolTips();
-  
+
 })();
 
 
