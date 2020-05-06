@@ -7,14 +7,14 @@
   var displayCount = tipDisplays.length;
   var i;
   
-  var setCoordinates = function(_trigger, _display) {
+  function setDisplayCoordinates(_trigger, _display) {
     var y = _trigger.offsetTop - _display.offsetHeight - 10;
     var x = _trigger.offsetLeft - (_display.offsetWidth * .5) + 8;
     _display.style.top = y + 'px';
     _display.style.left = x + 'px';
   }
   
-  var handleOpenTips = function() {
+  function handleOpenTips() {
     var openTip = document.querySelector("[aria-hidden='false']");
     if(openTip) {
       openTip.setAttribute('aria-hidden', true);
@@ -22,6 +22,14 @@
     } else {
       return;
     }
+  }
+
+  function setEsc() {
+    document.addEventListener('keydown', function(e) {
+      if(e.keyCode === 27) {
+        handleOpenTips();
+      }
+    })
   }
   
   function handleDisplay(_event, _displayId) {
@@ -31,7 +39,7 @@
     if(isHidden) {
       handleOpenTips();    
       currentDisplay.setAttribute('aria-hidden', false);
-      setCoordinates(_event.target, currentDisplay);
+      setDisplayCoordinates(_event.target, currentDisplay);
     } else if(!isHidden) {
       currentDisplay.setAttribute('aria-hidden', true);
     }
@@ -49,16 +57,8 @@
     _trigger.addEventListener('click', function(e) {
       handleDisplay(e, displayId);
     });
-  }
-  
-  function setEsc() {
-    document.addEventListener('keydown', function(e) {
-      if(e.keyCode === 27) {
-        handleOpenTips();
-      }
-    })
-  }
-  
+  }  
+ 
   function initToolTips() {
     if(triggerCount === 0 && displayCount === 0) {
       console.error('Tooltip Error: no tooltips in file.');
@@ -77,6 +77,7 @@
   }
   
   initToolTips();
+  
 })();
 
 
