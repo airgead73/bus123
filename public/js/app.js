@@ -1,27 +1,86 @@
-var tipTrigger = {
-  selector: '[data-tooltip]',
-  text: 'data-content',
-  id: 'tooltip_'
-};
 
-var tooltipTriggersList = document.querySelectorAll(tipTrigger.selector);
-var toolTipTriggers = Array.prototype.slice.call(tooltipTriggersList);
-var tipCount = toolTipTriggers.length;
+var tipTriggersList = document.querySelectorAll('[data-tooltip-trigger');
+var tipTriggers = Array.prototype.slice.call(tipTriggersList);
+var tipDisplaysList = document.querySelectorAll('[data-tooltip-content');
+var tipDisplays = Array.prototype.slice.call(tipDisplaysList);
+var triggerCount = tipTriggers.length;
+var displayCount = tipDisplays.length;
 var i;
 
-function openTip(e) {
-  var tip = e.target;
-  var text = tip.getAttribute(tipTrigger.text);
-  console.log(text);
+var setCoordinates = function(_trigger, _display) {
+  var y = _trigger.offsetTop - _display.offsetHeight - 10;
+  var x = _trigger.offsetLeft - (_display.offsetWidth * .5) + 8;
+  _display.style.top = y + 'px';
+  _display.style.left = x + 'px';
 }
 
-for(i = 0; i < tipCount; i++) {
-  var trigger = toolTipTriggers[i];
-  trigger.setAttribute('tabindex', 0);
-  trigger.setAttribute('role', 'tooltip')
-  trigger.addEventListener('click', function(e) {
-    openTip(e);
+var handleOpenTips = function() {
+  var openTip = document.querySelector("[aria-hidden='false']");
+  if(openTip) {
+    openTip.setAttribute('aria-hidden', true);
+    return;
+  } else {
+    return;
+  }
+}
+
+function handleDisplay(_event, _displayId) {
+  _event.preventDefault();
+  var currentDisplay = document.getElementById(_displayId);
+  var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
+  if(isHidden) {
+    handleOpenTips();    
+    currentDisplay.setAttribute('aria-hidden', false);
+    setCoordinates(_event.target, currentDisplay);
+  } else if(!isHidden) {
+    currentDisplay.setAttribute('aria-hidden', true);
+  }
+}
+
+function initDisplays(_display) {
+  _display.setAttribute('aria-hidden', true);
+  _display.setAttribute('role', 'tooltip');
+}
+
+
+
+function initTriggers(_trigger) {
+  var displayId= _trigger.getAttribute('href').split('#'); 
+  displayId = displayId[1];
+  _trigger.setAttribute('aria-describedby', displayId);
+  _trigger.addEventListener('click', function(e) {
+    handleDisplay(e, displayId);
+  });
+}
+
+function setEsc() {
+  document.addEventListener('keydown', function(e) {
+    if(e.keyCode === 27) {
+      handleOpenTips();
+    }
   })
 }
+
+function initToolTips() {
+  if(triggerCount === 0 && displayCount === 0) {
+    console.error('Tooltip Error: no tooltips in file.');
+    return;
+  }
+  if(triggerCount !== displayCount) {
+    console.error('Tooltip Error: number of triggers does not match number of tooltips.');
+    return;
+  }
+  console.log('no errors')
+  for(i = 0; i < triggerCount; i++) {
+    initDisplays(tipDisplays[i]);
+    initTriggers(tipTriggers[i]);
+  }
+  setEsc();
+}
+
+initToolTips();
+
+
+
 
 

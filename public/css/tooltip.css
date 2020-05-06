@@ -1,4 +1,44 @@
-.tooltip-bold {
+a.tooltip-bold {
   font-style: italic;
   font-weight: bold;
+  color: darkslategray;
 }
+
+[id^='tooltip'] {
+  color: red;
+}
+
+[id^='tooltip'][aria-hidden='true'] {
+  display: none;
+}
+
+[id^='tooltip'][aria-hidden='false'] {
+  display: block;
+  position: absolute;
+  background-color: darkslategray;
+  color: white;
+  padding: 8px 12px;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+[id^='tooltip'][aria-hidden='false']::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: darkslategray transparent transparent transparent;  
+}
+
+.tooltip-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color:darkslategray;
+  margin-left: 3px;
+}
+
