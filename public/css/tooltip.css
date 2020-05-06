@@ -21,6 +21,7 @@ a.tooltip-bold {
   max-width: 300px;
   text-align: center;
   border-radius: 8px;
+  z-index: 4600;
 }
 
 [id^='tooltip'][aria-hidden='false']::after {
@@ -31,7 +32,8 @@ a.tooltip-bold {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: darkslategray transparent transparent transparent;  
+  border-color: darkslategray transparent transparent transparent; 
+  z-index: 4600; 
 }
 
 .tooltip-icon {
