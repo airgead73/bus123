@@ -12,10 +12,13 @@
 [id^='tooltip-content'][aria-hidden='false'] {
   display: block;
   position: absolute;
+  left: -150px;
+  font-style: normal;
+  font-weight: normal;
   background-color: darkslategray;
   color: white;
   padding: 8px 12px;
-  max-width: 300px;
+  width: 300px;
   text-align: center;
   border-radius: 8px;
   z-index: 4600;
@@ -33,7 +36,8 @@
   z-index: 4600; 
 }
 
-.tooltip-icon::before {
+
+[aria-describedby]::before {
   content: '';
   display: inline-block;
   width: 10px;
@@ -43,7 +47,7 @@
   margin-right: 2px;
 }
 
-.tooltip-icon:hover {
+[aria-describedby]:hover {
   cursor: pointer;
 }
 
