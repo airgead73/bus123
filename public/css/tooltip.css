@@ -5,7 +5,14 @@ a.tooltip-bold {
 }
 
 [id^='tooltip'] {
-  color: red;
+  font-style: italic;
+  color: darkslategray;
+  padding: 5px 25px;
+}
+
+[id^='tooltip']:first-of-type {
+  border-top: 1px solid gray;
+  padding-top: 25px;
 }
 
 [id^='tooltip'][aria-hidden='true'] {
