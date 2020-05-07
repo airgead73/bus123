@@ -35,6 +35,10 @@
   function handleDisplay(_event, _displayId) {
     _event.preventDefault();
     var currentDisplay = document.getElementById(_displayId);
+    if(currentDisplay === null) {
+      console.error(`Tooltip Error: no tooltip for ${_displayId}.`);
+      return;
+    }
     var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
     if(isHidden) {
       handleOpenTips();    
