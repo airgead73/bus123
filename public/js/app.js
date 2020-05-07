@@ -68,7 +68,7 @@
       console.error('Tooltip Error: number of triggers does not match number of tooltips.');
       return;
     }
-    console.log('no errors')
+    
     for(i = 0; i < triggerCount; i++) {
       initDisplays(tipDisplays[i]);
       initTriggers(tipTriggers[i]);
