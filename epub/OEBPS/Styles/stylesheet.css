@@ -2374,11 +2374,11 @@ TOOLTIP STYLES
 
 **************************************/
 
-span.tt-bold {
-  font-weight: bold;
+span.test_red {
+  color: red;
 }
 
-span[role="tooltip"] {
-  font-weight: normal;
-  color: red;
+i.tt-icon {
+  color: blue;
+  font-weight: bold;
 }
