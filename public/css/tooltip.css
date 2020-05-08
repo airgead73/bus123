@@ -19,17 +19,22 @@ a.tooltip-bold {
   display: none;
 }
 
+/* Styles for tooltip content when displayed */
+
 [id^='tooltip'][aria-hidden='false'] {
   display: block;
   position: absolute;
   background-color: darkslategray;
   color: white;
+  font-style: normal;
   padding: 8px 12px;
   max-width: 300px;
   text-align: center;
   border-radius: 8px;
   z-index: 4600;
 }
+
+/* 'Arrow' beneath tip content */
 
 [id^='tooltip'][aria-hidden='false']::after {
   content: "";
@@ -42,6 +47,26 @@ a.tooltip-bold {
   border-color: darkslategray transparent transparent transparent; 
   z-index: 4600; 
 }
+
+/* If tooltip contains paragraphs */
+
+[id^='tooltip'][aria-hidden='false'] > p {
+  color: white;
+  text-indent: 16px;
+  /* padding-bottom: 8px; */
+}
+
+/* Text Align
+Default is center
+*/
+
+[id^='tooltip'][aria-hidden='false'].tooltip-left {
+  text-align: left;
+}
+
+
+
+/* Square icon at tooltip trigger */
 
 .tooltip-icon {
   display: inline-block;
