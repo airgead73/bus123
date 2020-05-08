@@ -2374,11 +2374,11 @@ TOOLTIP STYLES
 
 **************************************/
 
-span.test_red {
+p.test_red {
   color: red;
 }
 
-i.tt-icon {
+i.test_icon {
   color: blue;
   font-weight: bold;
 }
