@@ -1,5 +1,4 @@
 (function() {
-  console.log('tooltip script loaded');
   var tooltipsList = document.querySelectorAll("[id^='tooltip']");
   var tooltips = Array.prototype.slice.call(tooltipsList);
   var tooltipCount = tooltips.length;
