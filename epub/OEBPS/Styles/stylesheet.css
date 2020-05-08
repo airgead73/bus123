@@ -2374,55 +2374,11 @@ TOOLTIP STYLES
 
 **************************************/
 
-span.tooltip-bold {
-  font-style: italic;
+span.tt-bold {
   font-weight: bold;
-  color: darkslategray;
-  position: relative;
 }
 
-span[id^='tooltip-content'][aria-hidden='true'] {
-  display: none;
-}
-
-span[id^='tooltip-content'][aria-hidden='false'] {
-  display: block;
-  position: absolute;
-  left: -150px;
-  font-style: normal;
+span[role="tooltip"] {
   font-weight: normal;
-  background-color: darkslategray;
-  color: white;
-  padding: 8px 12px;
-  width: 300px;
-  text-align: center;
-  border-radius: 8px;
-  z-index: 4600;
-}
-
-span[id^='tooltip-content'][aria-hidden='false']::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: darkslategray transparent transparent transparent; 
-  z-index: 4600; 
-}
-
-
-span[aria-describedby]::before {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color:darkslategray;
-  margin-left: 3px;
-  margin-right: 2px;
-}
-
-span[aria-describedby]:hover {
-  cursor: pointer;
+  color: red;
 }
