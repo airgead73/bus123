@@ -9,7 +9,7 @@
   
   function setDisplayCoordinates(_trigger, _display) {
     var y = _trigger.offsetTop - _display.offsetHeight - 10;
-    var x = _trigger.offsetLeft - (_display.offsetWidth * .5) + 8;
+    var x = _trigger.offsetLeft - (_display.offsetWidth * .5) + 5;
     _display.style.top = y + 'px';
     _display.style.left = x + 'px';
   }

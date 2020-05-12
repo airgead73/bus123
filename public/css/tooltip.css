@@ -1,59 +1,65 @@
-[id^='tooltip'][aria-hidden='true'] {
-  display: none;
+/* Styles for tooltip trigger */
+a.tt-trigger.primary {
+  color: darkslategray;
+}
+
+a.tt-trigger.primary:hover {
+  color: orange;
+  text-decoration: underline;
 }
 
 /* Styles for tooltip content when displayed */
 
-[data-tooltip='content'][aria-hidden='false'] {
-  display: block;
-  position: absolute;
-  background-color: darkslategray;
-  color: white;
+.tt {
   font-style: normal;
   padding: 8px 12px;
   max-width: 300px;
   text-align: center;
   border-radius: 8px;
-  z-index: 4600;
+  border-width: 1px;
+}
+
+/* additional classes to customize certain properties such as color */
+
+.tt.primary {
+  background-color: darkslategray;
+  color: white;  
+}
+
+.tt.primary > p {
+  color: white;
+}
+
+/* arrow color */
+.tt.primary::after {
+  border-color: darkslategray transparent transparent transparent;
 }
 
 /* 'Arrow' beneath tip content */
-
-[data-tooltip='content'][aria-hidden='false']::after {
+.tt[aria-hidden='false']::after {
   content: "";
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: darkslategray transparent transparent transparent; 
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;   
   z-index: 4600; 
 }
 
-/* If tooltip contains paragraphs */
+/* Styles to show/hide tips used by script -- Don't change */
 
-[data-tooltip='content'][aria-hidden='false'] > p {
-  color: white;
-  text-indent: 16px;
-  /* padding-bottom: 8px; */
+[data-tooltip='content'][aria-hidden='true'] {
+  display: none;
 }
 
-/* Text Align
-Default is center
-*/
-
-[data-tooltip='content'][aria-hidden='false'].tooltip-left {
-  text-align: left;
+[data-tooltip='content'][aria-hidden='false'] {
+  display: block;
+  position: absolute;
+  z-index: 4600;
 }
 
-/* Square icon at tooltip trigger */
 
-.tooltip-icon {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color:darkslategray;
-  margin-left: 3px;
-}
+
+
 
