@@ -36,7 +36,8 @@
     _event.preventDefault();
     var currentDisplay = document.getElementById(_displayId);
     if(currentDisplay === null) {
-      console.error(`Tooltip Error: no tooltip for ${_displayId}.`);
+      const num = _displayId.replace('tooltip', '')
+      console.error(`Tooltip Error: \n no tooltip for trigger ${num}.`);
       return;
     }
     var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
@@ -65,11 +66,12 @@
  
   function initToolTips() {
     if(triggerCount === 0 && displayCount === 0) {
-      console.warn('Tooltip Error: no tooltips in file.');
+      console.warn('Tooltip: \n Page has no tooltips.');
       return;
     }
+
     if(triggerCount !== displayCount) {
-      console.error('Tooltip Error: number of triggers does not match number of tooltips.');
+      console.error('Tooltip Error: \n Page has ' + triggerCount + ' triggers, but ' + displayCount + ' tooltips.');
       return;
     }
     
