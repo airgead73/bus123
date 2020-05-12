@@ -1,27 +1,10 @@
-a.tooltip-bold {
-  font-style: italic;
-  font-weight: bold;
-  color: darkslategray;
-}
-
-[id^='tooltip'] {
-  font-style: italic;
-  color: darkslategray;
-  padding: 5px 25px;
-}
-
-[id^='tooltip']:first-of-type {
-  border-top: 1px solid gray;
-  padding-top: 25px;
-}
-
 [id^='tooltip'][aria-hidden='true'] {
   display: none;
 }
 
 /* Styles for tooltip content when displayed */
 
-[id^='tooltip'][aria-hidden='false'] {
+[data-tooltip='content'][aria-hidden='false'] {
   display: block;
   position: absolute;
   background-color: darkslategray;
@@ -36,7 +19,7 @@ a.tooltip-bold {
 
 /* 'Arrow' beneath tip content */
 
-[id^='tooltip'][aria-hidden='false']::after {
+[data-tooltip='content'][aria-hidden='false']::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -50,7 +33,7 @@ a.tooltip-bold {
 
 /* If tooltip contains paragraphs */
 
-[id^='tooltip'][aria-hidden='false'] > p {
+[data-tooltip='content'][aria-hidden='false'] > p {
   color: white;
   text-indent: 16px;
   /* padding-bottom: 8px; */
@@ -60,11 +43,9 @@ a.tooltip-bold {
 Default is center
 */
 
-[id^='tooltip'][aria-hidden='false'].tooltip-left {
+[data-tooltip='content'][aria-hidden='false'].tooltip-left {
   text-align: left;
 }
-
-
 
 /* Square icon at tooltip trigger */
 

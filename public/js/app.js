@@ -65,7 +65,7 @@
  
   function initToolTips() {
     if(triggerCount === 0 && displayCount === 0) {
-      console.error('Tooltip Error: no tooltips in file.');
+      console.warn('Tooltip Error: no tooltips in file.');
       return;
     }
     if(triggerCount !== displayCount) {
