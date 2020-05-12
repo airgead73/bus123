@@ -10,7 +10,7 @@ a.tt-trigger.primary:hover {
 
 /* Styles for tooltip content when displayed */
 
-.tt {
+.tt[aria-hidden='false'] {
   font-style: normal;
   padding: 8px 12px;
   max-width: 300px;
@@ -21,12 +21,12 @@ a.tt-trigger.primary:hover {
 
 /* additional classes to customize certain properties such as color */
 
-.tt.primary {
+.tt.primary[aria-hidden='false'] {
   background-color: darkslategray;
   color: white;  
 }
 
-.tt.primary > p {
+.tt.primary[aria-hidden='false'] > p {
   color: white;
 }
 
@@ -34,6 +34,22 @@ a.tt-trigger.primary:hover {
 .tt.primary::after {
   border-color: darkslategray transparent transparent transparent;
 }
+
+.tt.secondary[aria-hidden='false'] {
+  background-color: #ededed;
+  color: darkslategray;  
+}
+
+.tt.secondary[aria-hidden='false'] > p {
+  color: darkslategray;
+}
+
+/* arrow color */
+.tt.secondary::after {
+  border-color: #ededed transparent transparent transparent;
+}
+
+
 
 /* 'Arrow' beneath tip content */
 .tt[aria-hidden='false']::after {
@@ -45,6 +61,11 @@ a.tt-trigger.primary:hover {
   border-width: 8px;
   border-style: solid;   
   z-index: 4600; 
+}
+
+/* default style */
+.tt {
+  font-style: italic;
 }
 
 /* Styles to show/hide tips used by script -- Don't change */

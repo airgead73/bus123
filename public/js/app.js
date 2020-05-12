@@ -6,7 +6,7 @@
   var triggerCount = tipTriggers.length;
   var displayCount = tipDisplays.length;
   var i;
-  
+
   function setDisplayCoordinates(_trigger, _display) {
     var y = _trigger.offsetTop - _display.offsetHeight - 10;
     var x = _trigger.offsetLeft - (_display.offsetWidth * .5) + 5;
