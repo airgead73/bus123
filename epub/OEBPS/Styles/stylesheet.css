@@ -2368,48 +2368,93 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
   padding: 0;
 }
 
-a.tooltip-bold {
-  font-style: italic;
-  font-weight: bold;
+/* Styles for tooltip trigger */
+a.tt-trigger.primary {
   color: darkslategray;
 }
 
-[id^='tooltip'] {
-  color: red;
+a.tt-trigger.primary:hover {
+  color: orange;
+  text-decoration: underline;
 }
 
-[id^='tooltip'][aria-hidden='true'] {
-  display: none;
+a.tt-trigger.secondary {
+  color: darkslategray;
+  font-style: italic;
+  font-weight: bold;
 }
 
-[id^='tooltip'][aria-hidden='false'] {
-  display: block;
-  position: absolute;
-  background-color: darkslategray;
-  color: white;
+a.tt-trigger.secondary:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* Styles for tooltip content when displayed */
+
+.tt[aria-hidden='false'] {
+  font-style: normal;
   padding: 8px 12px;
   max-width: 300px;
   text-align: center;
   border-radius: 8px;
-  z-index: 4600;
+  border-width: 1px;
 }
 
-[id^='tooltip'][aria-hidden='false']::after {
+/* additional classes to customize certain properties such as color */
+
+.tt.primary[aria-hidden='false'] {
+  background-color: darkslategray;
+  color: white;  
+}
+
+.tt.primary[aria-hidden='false'] > p {
+  color: white;
+}
+
+/* arrow color */
+.tt.primary::after {
+  border-color: darkslategray transparent transparent transparent;
+}
+
+.tt.secondary[aria-hidden='false'] {
+  background-color: #ededed;
+  color: darkslategray;  
+}
+
+.tt.secondary[aria-hidden='false'] > p {
+  color: darkslategray;
+}
+
+/* arrow color */
+.tt.secondary::after {
+  border-color: #ededed transparent transparent transparent;
+}
+
+/* 'Arrow' beneath tip content */
+.tt[aria-hidden='false']::after {
   content: "";
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: darkslategray transparent transparent transparent; 
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;   
   z-index: 4600; 
 }
 
-.tooltip-icon {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color:darkslategray;
-  margin-left: 3px;
+/* default style */
+.tt {
+  font-style: italic;
+}
+
+/* Styles to show/hide tips used by script -- Don't change */
+
+[data-tooltip='content'][aria-hidden='true'] {
+  display: none;
+}
+
+[data-tooltip='content'][aria-hidden='false'] {
+  display: block;
+  position: absolute;
+  z-index: 4600;
 }

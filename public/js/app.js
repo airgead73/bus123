@@ -40,6 +40,11 @@
       console.error(`Tooltip Error: \n no tooltip for trigger ${num}.`);
       return;
     }
+    if(_event.type === 'blur') {
+      currentDisplay.setAttribute('aria-hidden', true);
+      return;
+    }
+
     var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
     if(isHidden) {
       handleOpenTips();    
@@ -62,6 +67,12 @@
     _trigger.addEventListener('click', function(e) {
       handleDisplay(e, displayId);
     });
+    _trigger.addEventListener('focus', function(e) {
+      handleDisplay(e, displayId);
+    });  
+    _trigger.addEventListener('blur', function(e) {
+      handleDisplay(e, displayId);
+    });      
   }  
  
   function initToolTips() {
@@ -69,16 +80,15 @@
       console.warn('Tooltip: \n Page has no tooltips.');
       return;
     }
-
-    if(triggerCount !== displayCount) {
-      console.error('Tooltip Error: \n Page has ' + triggerCount + ' triggers, but ' + displayCount + ' tooltips.');
-      return;
-    }
     
     for(i = 0; i < triggerCount; i++) {
-      initDisplays(tipDisplays[i]);
       initTriggers(tipTriggers[i]);
     }
+
+    for(i = 0; i < displayCount; i++) {
+      initDisplays(tipDisplays[i]);
+    }    
+
     setEsc();
   }
   

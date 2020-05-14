@@ -8,6 +8,17 @@ a.tt-trigger.primary:hover {
   text-decoration: underline;
 }
 
+a.tt-trigger.secondary {
+  color: darkslategray;
+  font-style: italic;
+  font-weight: bold;
+}
+
+a.tt-trigger.secondary:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
 /* Styles for tooltip content when displayed */
 
 .tt[aria-hidden='false'] {
