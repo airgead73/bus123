@@ -3,6 +3,8 @@
   var tooltips = Array.prototype.slice.call(tooltipsList);
   var tooltipCount = tooltips.length;
   var i;
+
+  console.log(tooltipCount)
   
   function createTooltip(_contentID, text) {
 
@@ -13,7 +15,7 @@
     tooltipDisplay.setAttribute('role', 'tooltip');
     tooltipDisplay.setAttribute('aria-hidden', true);
 
-    tooltipDisplay.append(tooltipText);
+    tooltipDisplay.appendChild(tooltipText);
     return tooltipDisplay;
     
   }
