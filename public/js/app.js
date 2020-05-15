@@ -19,7 +19,7 @@
   }
 
   function setY(_content) {
-    var y = "-" + (_content.offsetHeight + 5) + 'px';
+    var y = "-" + (_content.offsetHeight + 10) + 'px';
     _content.style.top = y;
 
   }
