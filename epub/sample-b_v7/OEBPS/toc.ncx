@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+<head>
+<meta name="dtb:uid" content="9780393635331"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="266"/>
+<meta name="dtb:maxPageNumber" content="266"/>
+</head>
+<docTitle><text>The Only Business Writing Book You&#8217;ll Ever Need</text></docTitle>
+<docAuthor><text>Laura Brown</text></docAuthor>
+<navMap>
+<navPoint id="a1" playOrder="1"><navLabel><text>Cover and Front Matter</text></navLabel><content src="Text/00_Cover.xhtml#cov"/>
+<navPoint id="a2" playOrder="2"><navLabel><text>Title</text></navLabel><content src="Text/02_Title.xhtml#title"/></navPoint>
+<navPoint id="a3" playOrder="3"><navLabel><text>Copyright</text></navLabel><content src="Text/04_Copyright.xhtml#copy"/></navPoint>
+<navPoint id="a4" playOrder="4"><navLabel><text>Dedication</text></navLabel><content src="Text/05_Dedication.xhtml#dedi"/></navPoint>
+<navPoint id="a5" playOrder="5"><navLabel><text>Foreword</text></navLabel><content src="Text/07_Foreword.xhtml#for"/></navPoint>
+<navPoint id="a6" playOrder="6"><navLabel><text>Preface</text></navLabel><content src="Text/08_Preface.xhtml#pre"/></navPoint>
+
+</navPoint>
+
+<navPoint id="a7" playOrder="7"><navLabel><text>Contents</text></navLabel><content src="Text/06_Contents.xhtml#contents"/></navPoint>
+
+
+<navPoint id="a8" playOrder="8"><navLabel><text>1: Introduction</text></navLabel><content src="Text/09_Introduction.xhtml#intro"/>
+<navPoint id="a9" playOrder="9"><navLabel><text>1.1 To Write or Not to Write?</text></navLabel><content src="Text/10_Chapter01.xhtml#ch1"/></navPoint>
+<navPoint id="a10" playOrder="10"><navLabel><text>1.2 What Kind of Writer Are You?</text></navLabel><content src="Text/11_Chapter02.xhtml#ch2"/></navPoint>
+</navPoint>
+
+<navPoint id="a11" playOrder="11"><navLabel><text>2: The Seven Steps</text></navLabel><content src="Text/12_Chapter03.xhtml#ch3"/>
+<navPoint id="a12" playOrder="12"><navLabel><text>2.1 Step 1: Get the Ask Clear</text></navLabel><content src="Text/12_Chapter03.xhtml#sec4"/></navPoint>
+<navPoint id="a13" playOrder="13"><navLabel><text>2.2 Step 2: Write for Your Reader</text></navLabel><content src="Text/12_Chapter03.xhtml#sec6"/></navPoint>
+<navPoint id="a14" playOrder="14"><navLabel><text>2.3 Step 3: Start Strong and Specific</text></navLabel><content src="Text/12_Chapter03.xhtml#sec8"/></navPoint>
+<navPoint id="a15" playOrder="15"><navLabel><text>2.4 Step 4: Be Concise</text></navLabel><content src="Text/12_Chapter03.xhtml#sec9"/></navPoint>
+<navPoint id="a16" playOrder="16"><navLabel><text>2.5 Step 5: Fill in Missing Content; Delete Extraneous Content</text></navLabel><content src="Text/12_Chapter03.xhtml#sec11"/></navPoint>
+<navPoint id="a17" playOrder="17"><navLabel><text>2.6 Step 6: Write in Plain English</text></navLabel><content src="Text/12_Chapter03.xhtml#sec12"/></navPoint>
+<navPoint id="a18" playOrder="18"><navLabel><text>2.7 Step 7: If Something Feels Wrong, Fix It</text></navLabel><content src="Text/12_Chapter03.xhtml#sec13"/></navPoint></navPoint>
+
+<navPoint id="a19" playOrder="19"><navLabel><text>3: The Checklist</text></navLabel><content src="Text/13_Chapter04.xhtml#ch4"/>
+<navPoint id="a20" playOrder="20"><navLabel><text>3.1 The Checklist in Action: Before and After Examples</text></navLabel><content src="Text/14_Chapter05.xhtml#ch5"/></navPoint>
+</navPoint>
+
+<navPoint id="a21" playOrder="21"><navLabel><text>4: Types of Business Writing: The Basics</text></navLabel><content src="Text/15_Chapter06.xhtml#ch6"/>
+<navPoint id="a22" playOrder="22"><navLabel><text>4.1 E-mail</text></navLabel><content src="Text/15_Chapter06.xhtml#sec16"/></navPoint>
+<navPoint id="a23" playOrder="23"><navLabel><text>4.2 Requests</text></navLabel><content src="Text/15_Chapter06.xhtml#sec19"/></navPoint>
+<navPoint id="a24" playOrder="24"><navLabel><text>4.3 Bad News Messages</text></navLabel><content src="Text/15_Chapter06.xhtml#sec21"/></navPoint>
+<navPoint id="a25" playOrder="25"><navLabel><text>4.4 Instant Messages</text></navLabel><content src="Text/15_Chapter06.xhtml#sec22"/></navPoint>
+<navPoint id="a26" playOrder="26"><navLabel><text>4.5 Presentations</text></navLabel><content src="Text/15_Chapter06.xhtml#sec23"/></navPoint>
+<navPoint id="a27" playOrder="27"><navLabel><text>4.6 Creating Visuals</text></navLabel><content src="Text/15_Chapter06.xhtml#sec24"/></navPoint>
+<navPoint id="a28" playOrder="28"><navLabel><text>4.7 Proposals</text></navLabel><content src="Text/15_Chapter06.xhtml#sec25"/></navPoint>
+</navPoint>
+
+<navPoint id="a29" playOrder="29"><navLabel><text>5: Types of Business Writing: Business Relationships</text></navLabel><content src="Text/15_Chapter06.xhtml#sec26"/>
+<navPoint id="a30" playOrder="30"><navLabel><text>5.1 Introductions</text></navLabel><content src="Text/15_Chapter06.xhtml#sec27"/></navPoint>
+<navPoint id="a31" playOrder="31"><navLabel><text>5.2 Recommendations</text></navLabel><content src="Text/15_Chapter06.xhtml#sec28"/></navPoint>
+<navPoint id="a32" playOrder="32"><navLabel><text>5.3 Thank-Yous</text></navLabel><content src="Text/15_Chapter06.xhtml#sec29"/></navPoint>
+<navPoint id="a33" playOrder="33"><navLabel><text>5.4 Apologies</text></navLabel><content src="Text/15_Chapter06.xhtml#sec31"/></navPoint>
+</navPoint>
+
+<navPoint id="a34" playOrder="34"><navLabel><text>6: Types of Business Writing: Promoting Your Business</text></navLabel><content src="Text/15_Chapter06.xhtml#sec32"/>
+<navPoint id="a35" playOrder="35"><navLabel><text>6.1 Web Copy</text></navLabel><content src="Text/15_Chapter06.xhtml#sec33"/></navPoint>
+<navPoint id="a36" playOrder="36"><navLabel><text>6.2 Blogs</text></navLabel><content src="Text/15_Chapter06.xhtml#sec34"/></navPoint>
+<navPoint id="a37" playOrder="37"><navLabel><text>6.3 Social Media</text></navLabel><content src="Text/15_Chapter06.xhtml#sec35"/></navPoint>
+<navPoint id="a38" playOrder="38"><navLabel><text>6.4 Press Releases</text></navLabel><content src="Text/15_Chapter06.xhtml#sec37"/></navPoint>
+<navPoint id="a39" playOrder="39"><navLabel><text>6.5 Speeches</text></navLabel><content src="Text/15_Chapter06.xhtml#sec38"/></navPoint>
+<navPoint id="a40" playOrder="40"><navLabel><text>6.6 Bios</text></navLabel><content src="Text/15_Chapter06.xhtml#sec40"/></navPoint>
+</navPoint>
+
+<navPoint id="a41" playOrder="41"><navLabel><text>7: Types of Business Writing: Employment Matters</text></navLabel><content src="Text/15_Chapter06.xhtml#sec41"/>
+<navPoint id="a42" playOrder="42"><navLabel><text>7.1 R&#233;sum&#233;s</text></navLabel><content src="Text/15_Chapter06.xhtml#sec42"/></navPoint>
+<navPoint id="a43" playOrder="43"><navLabel><text>7.2 Cover Letter for Your R&#233;sum&#233;</text></navLabel><content src="Text/15_Chapter06.xhtml#sec43"/></navPoint>
+<navPoint id="a44" playOrder="44"><navLabel><text>7.3 Follow-Up Message After a Job Interview</text></navLabel><content src="Text/15_Chapter06.xhtml#sec44"/></navPoint>
+<navPoint id="a45" playOrder="45"><navLabel><text>7.4 Job Descriptions</text></navLabel><content src="Text/15_Chapter06.xhtml#sec46"/></navPoint>
+<navPoint id="a46" playOrder="46"><navLabel><text>7.5 Job Advertisements</text></navLabel><content src="Text/15_Chapter06.xhtml#sec47"/></navPoint>
+<navPoint id="a47" playOrder="47"><navLabel><text>7.6 Performance Reviews</text></navLabel><content src="Text/15_Chapter06.xhtml#sec48"/></navPoint>
+<navPoint id="a48" playOrder="48"><navLabel><text>7.7 Resignation Letters</text></navLabel><content src="Text/15_Chapter06.xhtml#sec49"/></navPoint>
+<navPoint id="a49" playOrder="49"><navLabel><text>7.8 Termination Letters</text></navLabel><content src="Text/15_Chapter06.xhtml#sec50"/></navPoint>
+</navPoint>
+
+<navPoint id="a50" playOrder="50"><navLabel><text>8: Persuasive Writing</text></navLabel><content src="Text/17_Chapter08.xhtml#ch8"/>
+<navPoint id="a51" playOrder="51"><navLabel><text>8.1 Three Means of Persuasion</text></navLabel><content src="Text/17_Chapter08.xhtml#sec101"/></navPoint>
+<navPoint id="a52" playOrder="52"><navLabel><text>8.2 Thinking About Tone and Language</text></navLabel><content src="Text/17_Chapter08.xhtml#sec102"/></navPoint>
+<navPoint id="a53" playOrder="53"><navLabel><text>8.3 Final Tips</text></navLabel><content src="Text/17_Chapter08.xhtml#sec103"/></navPoint>
+</navPoint>
+
+<navPoint id="a54" playOrder="54"><navLabel><text>9 Writing With a Team</text></navLabel><content src="Text/18_Chapter09.xhtml#ch9"/>
+<navPoint id="a55" playOrder="55"><navLabel><text>9.1 Stage 1: Define the Mission</text></navLabel><content src="Text/18_Chapter09.xhtml#sec104"/></navPoint>
+<navPoint id="a56" playOrder="56"><navLabel><text>9.2 Stages 2 and 3: Create an Action Plan and Establish Goals and Deadlines</text></navLabel><content src="Text/18_Chapter09.xhtml#sec105"/></navPoint>
+<navPoint id="a57" playOrder="57"><navLabel><text>9.3 Stage 4: Finalize the Project</text></navLabel><content src="Text/18_Chapter09.xhtml#sec106"/></navPoint>
+</navPoint>
+
+<navPoint id="a58" playOrder="58"><navLabel><text>10: Resources</text></navLabel><content src="Text/16_Chapter07.xhtml#ch7"/>
+<navPoint id="a59" playOrder="59"><navLabel><text>10.1 Writing Skills</text></navLabel><content src="Text/16_Chapter07.xhtml#sec51"/></navPoint>
+<navPoint id="a60" playOrder="60"><navLabel><text>10.2 Style</text></navLabel><content src="Text/16_Chapter07.xhtml#sec55"/></navPoint>
+<navPoint id="a61" playOrder="61"><navLabel><text>10.3 Grammar And Usage</text></navLabel><content src="Text/16_Chapter07.xhtml#sec60"/></navPoint>
+<navPoint id="a62" playOrder="62"><navLabel><text>10.4 Commonly Confused Words</text></navLabel><content src="Text/16_Chapter07.xhtml#sec69"/></navPoint>
+<navPoint id="a63" playOrder="63"><navLabel><text>10.5 Punctuation</text></navLabel><content src="Text/16_Chapter07.xhtml#sec70"/></navPoint></navPoint>
+
+<navPoint id="a64" playOrder="64"><navLabel><text>Appendix A: Business Writing Survey</text></navLabel><content src="Text/19_Appendix-A.xhtml#appa"/></navPoint>
+
+<navPoint id="a65" playOrder="65"><navLabel><text>Appendix B: List of Common Prepositions</text></navLabel><content src="Text/20_Appendix-B.xhtml#appb"/></navPoint>
+
+<navPoint id="a66" playOrder="66"><navLabel><text>Appendix C: Finding a Career</text></navLabel><content src="Text/21_Appendix-C.xhtml#appc"/></navPoint>
+
+<navPoint id="a67" playOrder="67"><navLabel><text>Back Matter</text></navLabel><content src="Text/22_Acknowledgments.xhtml#ack"/>
+<navPoint id="a68" playOrder="68"><navLabel><text>Contributors</text></navLabel><content src="Text/23_Contributors.xhtml#cont"/></navPoint>
+<navPoint id="a69" playOrder="69"><navLabel><text>Index</text></navLabel><content src="Text/25_Index.xhtml#ind"/></navPoint>
+<navPoint id="a70" playOrder="70"><navLabel><text>About the Author</text></navLabel><content src="Text/24_Author.xhtml#aut"/></navPoint>
+
+<navPoint id="a71" playOrder="71"><navLabel><text>Also by Laura Brown</text></navLabel><content src="Text/01_Also.xhtml#al"/></navPoint>
+</navPoint>
+</navMap>
+<pageList>
+<pageTarget id="a98" type="normal" value="v"><navLabel><text>v</text></navLabel><content src="Text/01_Also.xhtml#page_v"/></pageTarget>
+<pageTarget id="a99" type="normal" value="vi"><navLabel><text>vi</text></navLabel><content src="Text/02_Title.xhtml#page_vi"/></pageTarget>
+<pageTarget id="a101" type="normal" value="viii"><navLabel><text>viii</text></navLabel><content src="Text/05_Dedication.xhtml#page_viii"/></pageTarget>
+<pageTarget id="a106" type="normal" value="xiii"><navLabel><text>xiii</text></navLabel><content src="Text/07_Foreword.xhtml#page_xiii"/></pageTarget>
+<pageTarget id="a107" type="normal" value="xiv"><navLabel><text>xiv</text></navLabel><content src="Text/07_Foreword.xhtml#page_xiv"/></pageTarget>
+<pageTarget id="a108" type="normal" value="xv"><navLabel><text>xvii</text></navLabel><content src="Text/07_Foreword.xhtml#page_xv"/></pageTarget>
+<pageTarget id="a109" type="normal" value="xvii"><navLabel><text>xvii</text></navLabel><content src="Text/08_Preface.xhtml#page_xvii"/></pageTarget>
+<pageTarget id="a110" type="normal" value="xviii"><navLabel><text>xviii</text></navLabel><content src="Text/08_Preface.xhtml#page_xviii"/></pageTarget>
+<pageTarget id="a111" type="normal" value="1"><navLabel><text>1</text></navLabel><content src="Text/09_Introduction.xhtml#page_1"/></pageTarget>
+<pageTarget id="a112" type="normal" value="2"><navLabel><text>2</text></navLabel><content src="Text/09_Introduction.xhtml#page_2"/></pageTarget>
+<pageTarget id="a113" type="normal" value="3"><navLabel><text>3</text></navLabel><content src="Text/09_Introduction.xhtml#page_3"/></pageTarget>
+<pageTarget id="a114" type="normal" value="4"><navLabel><text>4</text></navLabel><content src="Text/10_Chapter01.xhtml#page_4"/></pageTarget>
+<pageTarget id="a115" type="normal" value="5"><navLabel><text>5</text></navLabel><content src="Text/10_Chapter01.xhtml#page_5"/></pageTarget>
+<pageTarget id="a116" type="normal" value="6"><navLabel><text>6</text></navLabel><content src="Text/10_Chapter01.xhtml#page_6"/></pageTarget>
+<pageTarget id="a117" type="normal" value="7"><navLabel><text>7</text></navLabel><content src="Text/10_Chapter01.xhtml#page_7"/></pageTarget>
+<pageTarget id="a118" type="normal" value="8"><navLabel><text>8</text></navLabel><content src="Text/11_Chapter02.xhtml#page_8"/></pageTarget>
+<pageTarget id="a119" type="normal" value="9"><navLabel><text>9</text></navLabel><content src="Text/12_Chapter03.xhtml#page_9"/></pageTarget>
+<pageTarget id="a120" type="normal" value="10"><navLabel><text>10</text></navLabel><content src="Text/12_Chapter03.xhtml#page_10"/></pageTarget>
+<pageTarget id="a121" type="normal" value="11"><navLabel><text>11</text></navLabel><content src="Text/12_Chapter03.xhtml#page_11"/></pageTarget>
+<pageTarget id="a122" type="normal" value="12"><navLabel><text>12</text></navLabel><content src="Text/12_Chapter03.xhtml#page_12"/></pageTarget>
+<pageTarget id="a123" type="normal" value="13"><navLabel><text>13</text></navLabel><content src="Text/12_Chapter03.xhtml#page_13"/></pageTarget>
+<pageTarget id="a124" type="normal" value="14"><navLabel><text>14</text></navLabel><content src="Text/12_Chapter03.xhtml#page_14"/></pageTarget>
+<pageTarget id="a125" type="normal" value="15"><navLabel><text>15</text></navLabel><content src="Text/12_Chapter03.xhtml#page_15"/></pageTarget>
+<pageTarget id="a126" type="normal" value="16"><navLabel><text>16</text></navLabel><content src="Text/12_Chapter03.xhtml#page_16"/></pageTarget>
+<pageTarget id="a127" type="normal" value="17"><navLabel><text>17</text></navLabel><content src="Text/12_Chapter03.xhtml#page_17"/></pageTarget>
+<pageTarget id="a128" type="normal" value="18"><navLabel><text>18</text></navLabel><content src="Text/12_Chapter03.xhtml#page_18"/></pageTarget>
+<pageTarget id="a129" type="normal" value="19"><navLabel><text>19</text></navLabel><content src="Text/12_Chapter03.xhtml#page_19"/></pageTarget>
+<pageTarget id="a130" type="normal" value="20"><navLabel><text>20</text></navLabel><content src="Text/12_Chapter03.xhtml#page_20"/></pageTarget>
+<pageTarget id="a131" type="normal" value="21"><navLabel><text>21</text></navLabel><content src="Text/12_Chapter03.xhtml#page_21"/></pageTarget>
+<pageTarget id="a132" type="normal" value="22"><navLabel><text>22</text></navLabel><content src="Text/12_Chapter03.xhtml#page_22"/></pageTarget>
+<pageTarget id="a133" type="normal" value="23"><navLabel><text>23</text></navLabel><content src="Text/12_Chapter03.xhtml#page_23"/></pageTarget>
+<pageTarget id="a134" type="normal" value="24"><navLabel><text>24</text></navLabel><content src="Text/12_Chapter03.xhtml#page_24"/></pageTarget>
+<pageTarget id="a135" type="normal" value="25"><navLabel><text>25</text></navLabel><content src="Text/12_Chapter03.xhtml#page_25"/></pageTarget>
+<pageTarget id="a136" type="normal" value="26"><navLabel><text>26</text></navLabel><content src="Text/12_Chapter03.xhtml#page_26"/></pageTarget>
+<pageTarget id="a137" type="normal" value="27"><navLabel><text>27</text></navLabel><content src="Text/12_Chapter03.xhtml#page_27"/></pageTarget>
+<pageTarget id="a138" type="normal" value="28"><navLabel><text>28</text></navLabel><content src="Text/12_Chapter03.xhtml#page_28"/></pageTarget>
+<pageTarget id="a139" type="normal" value="29"><navLabel><text>29</text></navLabel><content src="Text/12_Chapter03.xhtml#page_29"/></pageTarget>
+<pageTarget id="a140" type="normal" value="30"><navLabel><text>30</text></navLabel><content src="Text/12_Chapter03.xhtml#page_30"/></pageTarget>
+<pageTarget id="a141" type="normal" value="31"><navLabel><text>31</text></navLabel><content src="Text/12_Chapter03.xhtml#page_31"/></pageTarget>
+<pageTarget id="a142" type="normal" value="32"><navLabel><text>32</text></navLabel><content src="Text/12_Chapter03.xhtml#page_32"/></pageTarget>
+<pageTarget id="a143" type="normal" value="33"><navLabel><text>33</text></navLabel><content src="Text/12_Chapter03.xhtml#page_33"/></pageTarget>
+<pageTarget id="a144" type="normal" value="34"><navLabel><text>34</text></navLabel><content src="Text/12_Chapter03.xhtml#page_34"/></pageTarget>
+<pageTarget id="a145" type="normal" value="35"><navLabel><text>35</text></navLabel><content src="Text/12_Chapter03.xhtml#page_35"/></pageTarget>
+<pageTarget id="a146" type="normal" value="36"><navLabel><text>36</text></navLabel><content src="Text/12_Chapter03.xhtml#page_36"/></pageTarget>
+<pageTarget id="a147" type="normal" value="37"><navLabel><text>37</text></navLabel><content src="Text/12_Chapter03.xhtml#page_37"/></pageTarget>
+<pageTarget id="a148" type="normal" value="38"><navLabel><text>38</text></navLabel><content src="Text/12_Chapter03.xhtml#page_38"/></pageTarget>
+<pageTarget id="a149" type="normal" value="39"><navLabel><text>39</text></navLabel><content src="Text/12_Chapter03.xhtml#page_39"/></pageTarget>
+<pageTarget id="a150" type="normal" value="40"><navLabel><text>40</text></navLabel><content src="Text/12_Chapter03.xhtml#page_40"/></pageTarget>
+<pageTarget id="a151" type="normal" value="41"><navLabel><text>41</text></navLabel><content src="Text/12_Chapter03.xhtml#page_41"/></pageTarget>
+<pageTarget id="a152" type="normal" value="42"><navLabel><text>42</text></navLabel><content src="Text/12_Chapter03.xhtml#page_42"/></pageTarget>
+<pageTarget id="a153" type="normal" value="43"><navLabel><text>43</text></navLabel><content src="Text/12_Chapter03.xhtml#page_43"/></pageTarget>
+<pageTarget id="a154" type="normal" value="44"><navLabel><text>44</text></navLabel><content src="Text/12_Chapter03.xhtml#page_44"/></pageTarget>
+<pageTarget id="a155" type="normal" value="45"><navLabel><text>45</text></navLabel><content src="Text/12_Chapter03.xhtml#page_45"/></pageTarget>
+<pageTarget id="a156" type="normal" value="46"><navLabel><text>46</text></navLabel><content src="Text/12_Chapter03.xhtml#page_46"/></pageTarget>
+<pageTarget id="a157" type="normal" value="47"><navLabel><text>47</text></navLabel><content src="Text/12_Chapter03.xhtml#page_47"/></pageTarget>
+<pageTarget id="a158" type="normal" value="48"><navLabel><text>48</text></navLabel><content src="Text/12_Chapter03.xhtml#page_48"/></pageTarget>
+<pageTarget id="a159" type="normal" value="49"><navLabel><text>49</text></navLabel><content src="Text/12_Chapter03.xhtml#page_49"/></pageTarget>
+<pageTarget id="a160" type="normal" value="50"><navLabel><text>50</text></navLabel><content src="Text/12_Chapter03.xhtml#page_50"/></pageTarget>
+<pageTarget id="a161" type="normal" value="51"><navLabel><text>51</text></navLabel><content src="Text/12_Chapter03.xhtml#page_51"/></pageTarget>
+<pageTarget id="a162" type="normal" value="52"><navLabel><text>52</text></navLabel><content src="Text/12_Chapter03.xhtml#page_52"/></pageTarget>
+<pageTarget id="a163" type="normal" value="53"><navLabel><text>53</text></navLabel><content src="Text/12_Chapter03.xhtml#page_53"/></pageTarget>
+<pageTarget id="a164" type="normal" value="54"><navLabel><text>54</text></navLabel><content src="Text/12_Chapter03.xhtml#page_54"/></pageTarget>
+<pageTarget id="a165" type="normal" value="55"><navLabel><text>55</text></navLabel><content src="Text/12_Chapter03.xhtml#page_55"/></pageTarget>
+<pageTarget id="a166" type="normal" value="56"><navLabel><text>56</text></navLabel><content src="Text/12_Chapter03.xhtml#page_56"/></pageTarget>
+<pageTarget id="a167" type="normal" value="57"><navLabel><text>57</text></navLabel><content src="Text/12_Chapter03.xhtml#page_57"/></pageTarget>
+<pageTarget id="a168" type="normal" value="58"><navLabel><text>58</text></navLabel><content src="Text/12_Chapter03.xhtml#page_58"/></pageTarget>
+<pageTarget id="a169" type="normal" value="59"><navLabel><text>59</text></navLabel><content src="Text/12_Chapter03.xhtml#page_59"/></pageTarget>
+<pageTarget id="a170" type="normal" value="60"><navLabel><text>60</text></navLabel><content src="Text/12_Chapter03.xhtml#page_60"/></pageTarget>
+<pageTarget id="a171" type="normal" value="61"><navLabel><text>61</text></navLabel><content src="Text/12_Chapter03.xhtml#page_61"/></pageTarget>
+<pageTarget id="a172" type="normal" value="62"><navLabel><text>62</text></navLabel><content src="Text/12_Chapter03.xhtml#page_62"/></pageTarget>
+<pageTarget id="a173" type="normal" value="63"><navLabel><text>63</text></navLabel><content src="Text/12_Chapter03.xhtml#page_63"/></pageTarget>
+<pageTarget id="a174" type="normal" value="64"><navLabel><text>64</text></navLabel><content src="Text/12_Chapter03.xhtml#page_64"/></pageTarget>
+<pageTarget id="a175" type="normal" value="65"><navLabel><text>65</text></navLabel><content src="Text/12_Chapter03.xhtml#page_65"/></pageTarget>
+<pageTarget id="a176" type="normal" value="66"><navLabel><text>66</text></navLabel><content src="Text/12_Chapter03.xhtml#page_66"/></pageTarget>
+<pageTarget id="a177" type="normal" value="67"><navLabel><text>67</text></navLabel><content src="Text/12_Chapter03.xhtml#page_67"/></pageTarget>
+<pageTarget id="a178" type="normal" value="68"><navLabel><text>68</text></navLabel><content src="Text/12_Chapter03.xhtml#page_68"/></pageTarget>
+<pageTarget id="a179" type="normal" value="69"><navLabel><text>69</text></navLabel><content src="Text/12_Chapter03.xhtml#page_69"/></pageTarget>
+<pageTarget id="a180" type="normal" value="70"><navLabel><text>70</text></navLabel><content src="Text/12_Chapter03.xhtml#page_70"/></pageTarget>
+<pageTarget id="a181" type="normal" value="71"><navLabel><text>71</text></navLabel><content src="Text/12_Chapter03.xhtml#page_71"/></pageTarget>
+<pageTarget id="a182" type="normal" value="72"><navLabel><text>72</text></navLabel><content src="Text/12_Chapter03.xhtml#page_72"/></pageTarget>
+<pageTarget id="a183" type="normal" value="73"><navLabel><text>73</text></navLabel><content src="Text/12_Chapter03.xhtml#page_73"/></pageTarget>
+<pageTarget id="a184" type="normal" value="74"><navLabel><text>74</text></navLabel><content src="Text/12_Chapter03.xhtml#page_74"/></pageTarget>
+<pageTarget id="a185" type="normal" value="75"><navLabel><text>75</text></navLabel><content src="Text/12_Chapter03.xhtml#page_75"/></pageTarget>
+<pageTarget id="a186" type="normal" value="76"><navLabel><text>76</text></navLabel><content src="Text/12_Chapter03.xhtml#page_76"/></pageTarget>
+<pageTarget id="a187" type="normal" value="77"><navLabel><text>77</text></navLabel><content src="Text/12_Chapter03.xhtml#page_77"/></pageTarget>
+<pageTarget id="a188" type="normal" value="78"><navLabel><text>78</text></navLabel><content src="Text/12_Chapter03.xhtml#page_78"/></pageTarget>
+<pageTarget id="a189" type="normal" value="79"><navLabel><text>79</text></navLabel><content src="Text/12_Chapter03.xhtml#page_79"/></pageTarget>
+<pageTarget id="a190" type="normal" value="80"><navLabel><text>80</text></navLabel><content src="Text/12_Chapter03.xhtml#page_80"/></pageTarget>
+<pageTarget id="a191" type="normal" value="81"><navLabel><text>81</text></navLabel><content src="Text/12_Chapter03.xhtml#page_81"/></pageTarget>
+<pageTarget id="a192" type="normal" value="82"><navLabel><text>82</text></navLabel><content src="Text/12_Chapter03.xhtml#page_82"/></pageTarget>
+<pageTarget id="a193" type="normal" value="83"><navLabel><text>83</text></navLabel><content src="Text/12_Chapter03.xhtml#page_83"/></pageTarget>
+<pageTarget id="a194" type="normal" value="84"><navLabel><text>84</text></navLabel><content src="Text/12_Chapter03.xhtml#page_84"/></pageTarget>
+<pageTarget id="a195" type="normal" value="85"><navLabel><text>85</text></navLabel><content src="Text/12_Chapter03.xhtml#page_85"/></pageTarget>
+<pageTarget id="a196" type="normal" value="86"><navLabel><text>86</text></navLabel><content src="Text/12_Chapter03.xhtml#page_86"/></pageTarget>
+<pageTarget id="a197" type="normal" value="87"><navLabel><text>87</text></navLabel><content src="Text/12_Chapter03.xhtml#page_87"/></pageTarget>
+<pageTarget id="a198" type="normal" value="88"><navLabel><text>88</text></navLabel><content src="Text/12_Chapter03.xhtml#page_88"/></pageTarget>
+<pageTarget id="a199" type="normal" value="89"><navLabel><text>89</text></navLabel><content src="Text/12_Chapter03.xhtml#page_89"/></pageTarget>
+<pageTarget id="a200" type="normal" value="90"><navLabel><text>90</text></navLabel><content src="Text/12_Chapter03.xhtml#page_90"/></pageTarget>
+<pageTarget id="a201" type="normal" value="91"><navLabel><text>91</text></navLabel><content src="Text/12_Chapter03.xhtml#page_91"/></pageTarget>
+<pageTarget id="a202" type="normal" value="92"><navLabel><text>92</text></navLabel><content src="Text/12_Chapter03.xhtml#page_92"/></pageTarget>
+<pageTarget id="a203" type="normal" value="93"><navLabel><text>93</text></navLabel><content src="Text/12_Chapter03.xhtml#page_93"/></pageTarget>
+<pageTarget id="a204" type="normal" value="94"><navLabel><text>94</text></navLabel><content src="Text/12_Chapter03.xhtml#page_94"/></pageTarget>
+<pageTarget id="a205" type="normal" value="95"><navLabel><text>95</text></navLabel><content src="Text/12_Chapter03.xhtml#page_95"/></pageTarget>
+<pageTarget id="a206" type="normal" value="96"><navLabel><text>96</text></navLabel><content src="Text/13_Chapter04.xhtml#page_96"/></pageTarget>
+<pageTarget id="a207" type="normal" value="97"><navLabel><text>97</text></navLabel><content src="Text/13_Chapter04.xhtml#page_97"/></pageTarget>
+<pageTarget id="a208" type="normal" value="98"><navLabel><text>98</text></navLabel><content src="Text/14_Chapter05.xhtml#page_98"/></pageTarget>
+<pageTarget id="a209" type="normal" value="99"><navLabel><text>99</text></navLabel><content src="Text/14_Chapter05.xhtml#page_99"/></pageTarget>
+<pageTarget id="a210" type="normal" value="100"><navLabel><text>100</text></navLabel><content src="Text/14_Chapter05.xhtml#page_100"/></pageTarget>
+<pageTarget id="a211" type="normal" value="101"><navLabel><text>101</text></navLabel><content src="Text/14_Chapter05.xhtml#page_101"/></pageTarget>
+<pageTarget id="a212" type="normal" value="102"><navLabel><text>102</text></navLabel><content src="Text/14_Chapter05.xhtml#page_102"/></pageTarget>
+<pageTarget id="a213" type="normal" value="103"><navLabel><text>103</text></navLabel><content src="Text/14_Chapter05.xhtml#page_103"/></pageTarget>
+<pageTarget id="a214" type="normal" value="104"><navLabel><text>104</text></navLabel><content src="Text/14_Chapter05.xhtml#page_104"/></pageTarget>
+<pageTarget id="a215" type="normal" value="105"><navLabel><text>105</text></navLabel><content src="Text/14_Chapter05.xhtml#page_105"/></pageTarget>
+<pageTarget id="a216" type="normal" value="106"><navLabel><text>106</text></navLabel><content src="Text/15_Chapter06.xhtml#page_106"/></pageTarget>
+<pageTarget id="a217" type="normal" value="107"><navLabel><text>107</text></navLabel><content src="Text/15_Chapter06.xhtml#page_107"/></pageTarget>
+<pageTarget id="a218" type="normal" value="108"><navLabel><text>108</text></navLabel><content src="Text/15_Chapter06.xhtml#page_108"/></pageTarget>
+<pageTarget id="a219" type="normal" value="109"><navLabel><text>109</text></navLabel><content src="Text/15_Chapter06.xhtml#page_109"/></pageTarget>
+<pageTarget id="a220" type="normal" value="110"><navLabel><text>110</text></navLabel><content src="Text/15_Chapter06.xhtml#page_110"/></pageTarget>
+<pageTarget id="a221" type="normal" value="111"><navLabel><text>111</text></navLabel><content src="Text/15_Chapter06.xhtml#page_111"/></pageTarget>
+<pageTarget id="a222" type="normal" value="112"><navLabel><text>112</text></navLabel><content src="Text/15_Chapter06.xhtml#page_112"/></pageTarget>
+<pageTarget id="a223" type="normal" value="113"><navLabel><text>113</text></navLabel><content src="Text/15_Chapter06.xhtml#page_113"/></pageTarget>
+<pageTarget id="a224" type="normal" value="114"><navLabel><text>114</text></navLabel><content src="Text/15_Chapter06.xhtml#page_114"/></pageTarget>
+<pageTarget id="a225" type="normal" value="115"><navLabel><text>115</text></navLabel><content src="Text/15_Chapter06.xhtml#page_115"/></pageTarget>
+<pageTarget id="a226" type="normal" value="116"><navLabel><text>116</text></navLabel><content src="Text/15_Chapter06.xhtml#page_116"/></pageTarget>
+<pageTarget id="a227" type="normal" value="117"><navLabel><text>117</text></navLabel><content src="Text/15_Chapter06.xhtml#page_117"/></pageTarget>
+<pageTarget id="a228" type="normal" value="118"><navLabel><text>118</text></navLabel><content src="Text/15_Chapter06.xhtml#page_118"/></pageTarget>
+<pageTarget id="a229" type="normal" value="119"><navLabel><text>119</text></navLabel><content src="Text/15_Chapter06.xhtml#page_119"/></pageTarget>
+<pageTarget id="a230" type="normal" value="120"><navLabel><text>120</text></navLabel><content src="Text/15_Chapter06.xhtml#page_120"/></pageTarget>
+<pageTarget id="a231" type="normal" value="121"><navLabel><text>121</text></navLabel><content src="Text/15_Chapter06.xhtml#page_121"/></pageTarget>
+<pageTarget id="a232" type="normal" value="122"><navLabel><text>122</text></navLabel><content src="Text/15_Chapter06.xhtml#page_122"/></pageTarget>
+<pageTarget id="a233" type="normal" value="123"><navLabel><text>123</text></navLabel><content src="Text/15_Chapter06.xhtml#page_123"/></pageTarget>
+<pageTarget id="a234" type="normal" value="124"><navLabel><text>124</text></navLabel><content src="Text/15_Chapter06.xhtml#page_124"/></pageTarget>
+<pageTarget id="a235" type="normal" value="125"><navLabel><text>125</text></navLabel><content src="Text/15_Chapter06.xhtml#page_125"/></pageTarget>
+<pageTarget id="a236" type="normal" value="126"><navLabel><text>126</text></navLabel><content src="Text/15_Chapter06.xhtml#page_126"/></pageTarget>
+<pageTarget id="a237" type="normal" value="127"><navLabel><text>127</text></navLabel><content src="Text/15_Chapter06.xhtml#page_127"/></pageTarget>
+<pageTarget id="a238" type="normal" value="128"><navLabel><text>128</text></navLabel><content src="Text/15_Chapter06.xhtml#page_128"/></pageTarget>
+<pageTarget id="a239" type="normal" value="129"><navLabel><text>129</text></navLabel><content src="Text/15_Chapter06.xhtml#page_129"/></pageTarget>
+<pageTarget id="a240" type="normal" value="130"><navLabel><text>130</text></navLabel><content src="Text/15_Chapter06.xhtml#page_130"/></pageTarget>
+<pageTarget id="a241" type="normal" value="131"><navLabel><text>131</text></navLabel><content src="Text/15_Chapter06.xhtml#page_131"/></pageTarget>
+<pageTarget id="a242" type="normal" value="132"><navLabel><text>132</text></navLabel><content src="Text/15_Chapter06.xhtml#page_132"/></pageTarget>
+<pageTarget id="a243" type="normal" value="133"><navLabel><text>133</text></navLabel><content src="Text/15_Chapter06.xhtml#page_133"/></pageTarget>
+<pageTarget id="a244" type="normal" value="134"><navLabel><text>134</text></navLabel><content src="Text/15_Chapter06.xhtml#page_134"/></pageTarget>
+<pageTarget id="a245" type="normal" value="135"><navLabel><text>135</text></navLabel><content src="Text/15_Chapter06.xhtml#page_135"/></pageTarget>
+<pageTarget id="a246" type="normal" value="136"><navLabel><text>136</text></navLabel><content src="Text/15_Chapter06.xhtml#page_136"/></pageTarget>
+<pageTarget id="a247" type="normal" value="137"><navLabel><text>137</text></navLabel><content src="Text/15_Chapter06.xhtml#page_137"/></pageTarget>
+<pageTarget id="a248" type="normal" value="138"><navLabel><text>138</text></navLabel><content src="Text/15_Chapter06.xhtml#page_138"/></pageTarget>
+<pageTarget id="a249" type="normal" value="139"><navLabel><text>139</text></navLabel><content src="Text/15_Chapter06.xhtml#page_139"/></pageTarget>
+<pageTarget id="a250" type="normal" value="140"><navLabel><text>140</text></navLabel><content src="Text/15_Chapter06.xhtml#page_140"/></pageTarget>
+<pageTarget id="a251" type="normal" value="141"><navLabel><text>141</text></navLabel><content src="Text/15_Chapter06.xhtml#page_141"/></pageTarget>
+<pageTarget id="a252" type="normal" value="142"><navLabel><text>142</text></navLabel><content src="Text/15_Chapter06.xhtml#page_142"/></pageTarget>
+<pageTarget id="a253" type="normal" value="143"><navLabel><text>143</text></navLabel><content src="Text/15_Chapter06.xhtml#page_143"/></pageTarget>
+<pageTarget id="a254" type="normal" value="144"><navLabel><text>144</text></navLabel><content src="Text/15_Chapter06.xhtml#page_144"/></pageTarget>
+<pageTarget id="a255" type="normal" value="145"><navLabel><text>145</text></navLabel><content src="Text/15_Chapter06.xhtml#page_145"/></pageTarget>
+<pageTarget id="a256" type="normal" value="146"><navLabel><text>146</text></navLabel><content src="Text/15_Chapter06.xhtml#page_146"/></pageTarget>
+<pageTarget id="a257" type="normal" value="147"><navLabel><text>147</text></navLabel><content src="Text/15_Chapter06.xhtml#page_147"/></pageTarget>
+<pageTarget id="a258" type="normal" value="148"><navLabel><text>148</text></navLabel><content src="Text/15_Chapter06.xhtml#page_148"/></pageTarget>
+<pageTarget id="a259" type="normal" value="149"><navLabel><text>149</text></navLabel><content src="Text/15_Chapter06.xhtml#page_149"/></pageTarget>
+<pageTarget id="a260" type="normal" value="150"><navLabel><text>150</text></navLabel><content src="Text/15_Chapter06.xhtml#page_150"/></pageTarget>
+<pageTarget id="a261" type="normal" value="151"><navLabel><text>151</text></navLabel><content src="Text/15_Chapter06.xhtml#page_151"/></pageTarget>
+<pageTarget id="a262" type="normal" value="152"><navLabel><text>152</text></navLabel><content src="Text/15_Chapter06.xhtml#page_152"/></pageTarget>
+<pageTarget id="a263" type="normal" value="153"><navLabel><text>153</text></navLabel><content src="Text/15_Chapter06.xhtml#page_153"/></pageTarget>
+<pageTarget id="a264" type="normal" value="154"><navLabel><text>154</text></navLabel><content src="Text/15_Chapter06.xhtml#page_154"/></pageTarget>
+<pageTarget id="a265" type="normal" value="155"><navLabel><text>155</text></navLabel><content src="Text/15_Chapter06.xhtml#page_155"/></pageTarget>
+<pageTarget id="a266" type="normal" value="156"><navLabel><text>156</text></navLabel><content src="Text/15_Chapter06.xhtml#page_156"/></pageTarget>
+<pageTarget id="a267" type="normal" value="157"><navLabel><text>157</text></navLabel><content src="Text/15_Chapter06.xhtml#page_157"/></pageTarget>
+<pageTarget id="a268" type="normal" value="158"><navLabel><text>158</text></navLabel><content src="Text/15_Chapter06.xhtml#page_158"/></pageTarget>
+<pageTarget id="a269" type="normal" value="159"><navLabel><text>159</text></navLabel><content src="Text/15_Chapter06.xhtml#page_159"/></pageTarget>
+<pageTarget id="a270" type="normal" value="160"><navLabel><text>160</text></navLabel><content src="Text/15_Chapter06.xhtml#page_160"/></pageTarget>
+<pageTarget id="a271" type="normal" value="161"><navLabel><text>161</text></navLabel><content src="Text/15_Chapter06.xhtml#page_161"/></pageTarget>
+<pageTarget id="a272" type="normal" value="162"><navLabel><text>162</text></navLabel><content src="Text/15_Chapter06.xhtml#page_162"/></pageTarget>
+<pageTarget id="a273" type="normal" value="163"><navLabel><text>163</text></navLabel><content src="Text/15_Chapter06.xhtml#page_163"/></pageTarget>
+<pageTarget id="a274" type="normal" value="164"><navLabel><text>164</text></navLabel><content src="Text/15_Chapter06.xhtml#page_164"/></pageTarget>
+<pageTarget id="a275" type="normal" value="165"><navLabel><text>165</text></navLabel><content src="Text/15_Chapter06.xhtml#page_165"/></pageTarget>
+<pageTarget id="a276" type="normal" value="166"><navLabel><text>166</text></navLabel><content src="Text/15_Chapter06.xhtml#page_166"/></pageTarget>
+<pageTarget id="a277" type="normal" value="167"><navLabel><text>167</text></navLabel><content src="Text/15_Chapter06.xhtml#page_167"/></pageTarget>
+<pageTarget id="a278" type="normal" value="168"><navLabel><text>168</text></navLabel><content src="Text/15_Chapter06.xhtml#page_168"/></pageTarget>
+<pageTarget id="a279" type="normal" value="169"><navLabel><text>169</text></navLabel><content src="Text/15_Chapter06.xhtml#page_169"/></pageTarget>
+<pageTarget id="a280" type="normal" value="170"><navLabel><text>170</text></navLabel><content src="Text/15_Chapter06.xhtml#page_170"/></pageTarget>
+<pageTarget id="a281" type="normal" value="171"><navLabel><text>171</text></navLabel><content src="Text/15_Chapter06.xhtml#page_171"/></pageTarget>
+<pageTarget id="a282" type="normal" value="172"><navLabel><text>172</text></navLabel><content src="Text/15_Chapter06.xhtml#page_172"/></pageTarget>
+<pageTarget id="a283" type="normal" value="173"><navLabel><text>173</text></navLabel><content src="Text/15_Chapter06.xhtml#page_173"/></pageTarget>
+<pageTarget id="a284" type="normal" value="174"><navLabel><text>174</text></navLabel><content src="Text/15_Chapter06.xhtml#page_174"/></pageTarget>
+<pageTarget id="a285" type="normal" value="175"><navLabel><text>175</text></navLabel><content src="Text/15_Chapter06.xhtml#page_175"/></pageTarget>
+<pageTarget id="a286" type="normal" value="176"><navLabel><text>176</text></navLabel><content src="Text/15_Chapter06.xhtml#page_176"/></pageTarget>
+<pageTarget id="a287" type="normal" value="177"><navLabel><text>177</text></navLabel><content src="Text/15_Chapter06.xhtml#page_177"/></pageTarget>
+<pageTarget id="a288" type="normal" value="178"><navLabel><text>178</text></navLabel><content src="Text/15_Chapter06.xhtml#page_178"/></pageTarget>
+<pageTarget id="a289" type="normal" value="179"><navLabel><text>179</text></navLabel><content src="Text/15_Chapter06.xhtml#page_179"/></pageTarget>
+<pageTarget id="a290" type="normal" value="180"><navLabel><text>180</text></navLabel><content src="Text/15_Chapter06.xhtml#page_180"/></pageTarget>
+<pageTarget id="a291" type="normal" value="181"><navLabel><text>181</text></navLabel><content src="Text/15_Chapter06.xhtml#page_181"/></pageTarget>
+<pageTarget id="a292" type="normal" value="182"><navLabel><text>182</text></navLabel><content src="Text/15_Chapter06.xhtml#page_182"/></pageTarget>
+<pageTarget id="a293" type="normal" value="183"><navLabel><text>183</text></navLabel><content src="Text/15_Chapter06.xhtml#page_183"/></pageTarget>
+<pageTarget id="a294" type="normal" value="184"><navLabel><text>184</text></navLabel><content src="Text/15_Chapter06.xhtml#page_184"/></pageTarget>
+<pageTarget id="a295" type="normal" value="185"><navLabel><text>185</text></navLabel><content src="Text/15_Chapter06.xhtml#page_185"/></pageTarget>
+<pageTarget id="a296" type="normal" value="186"><navLabel><text>186</text></navLabel><content src="Text/15_Chapter06.xhtml#page_186"/></pageTarget>
+<pageTarget id="a297" type="normal" value="187"><navLabel><text>187</text></navLabel><content src="Text/16_Chapter07.xhtml#page_187"/></pageTarget>
+<pageTarget id="a298" type="normal" value="188"><navLabel><text>188</text></navLabel><content src="Text/16_Chapter07.xhtml#page_188"/></pageTarget>
+<pageTarget id="a299" type="normal" value="189"><navLabel><text>189</text></navLabel><content src="Text/16_Chapter07.xhtml#page_189"/></pageTarget>
+<pageTarget id="a300" type="normal" value="190"><navLabel><text>190</text></navLabel><content src="Text/16_Chapter07.xhtml#page_190"/></pageTarget>
+<pageTarget id="a301" type="normal" value="191"><navLabel><text>191</text></navLabel><content src="Text/16_Chapter07.xhtml#page_191"/></pageTarget>
+<pageTarget id="a302" type="normal" value="192"><navLabel><text>192</text></navLabel><content src="Text/16_Chapter07.xhtml#page_192"/></pageTarget>
+<pageTarget id="a303" type="normal" value="193"><navLabel><text>193</text></navLabel><content src="Text/16_Chapter07.xhtml#page_193"/></pageTarget>
+<pageTarget id="a304" type="normal" value="194"><navLabel><text>194</text></navLabel><content src="Text/16_Chapter07.xhtml#page_194"/></pageTarget>
+<pageTarget id="a305" type="normal" value="195"><navLabel><text>195</text></navLabel><content src="Text/16_Chapter07.xhtml#page_195"/></pageTarget>
+<pageTarget id="a306" type="normal" value="196"><navLabel><text>196</text></navLabel><content src="Text/16_Chapter07.xhtml#page_196"/></pageTarget>
+<pageTarget id="a307" type="normal" value="197"><navLabel><text>197</text></navLabel><content src="Text/16_Chapter07.xhtml#page_197"/></pageTarget>
+<pageTarget id="a308" type="normal" value="198"><navLabel><text>198</text></navLabel><content src="Text/16_Chapter07.xhtml#page_198"/></pageTarget>
+<pageTarget id="a309" type="normal" value="199"><navLabel><text>199</text></navLabel><content src="Text/16_Chapter07.xhtml#page_199"/></pageTarget>
+<pageTarget id="a310" type="normal" value="200"><navLabel><text>200</text></navLabel><content src="Text/16_Chapter07.xhtml#page_200"/></pageTarget>
+<pageTarget id="a311" type="normal" value="201"><navLabel><text>201</text></navLabel><content src="Text/16_Chapter07.xhtml#page_201"/></pageTarget>
+<pageTarget id="a312" type="normal" value="202"><navLabel><text>202</text></navLabel><content src="Text/16_Chapter07.xhtml#page_202"/></pageTarget>
+<pageTarget id="a313" type="normal" value="203"><navLabel><text>203</text></navLabel><content src="Text/16_Chapter07.xhtml#page_203"/></pageTarget>
+<pageTarget id="a314" type="normal" value="204"><navLabel><text>204</text></navLabel><content src="Text/16_Chapter07.xhtml#page_204"/></pageTarget>
+<pageTarget id="a315" type="normal" value="205"><navLabel><text>205</text></navLabel><content src="Text/16_Chapter07.xhtml#page_205"/></pageTarget>
+<pageTarget id="a316" type="normal" value="206"><navLabel><text>206</text></navLabel><content src="Text/16_Chapter07.xhtml#page_206"/></pageTarget>
+<pageTarget id="a317" type="normal" value="207"><navLabel><text>207</text></navLabel><content src="Text/16_Chapter07.xhtml#page_207"/></pageTarget>
+<pageTarget id="a318" type="normal" value="208"><navLabel><text>208</text></navLabel><content src="Text/16_Chapter07.xhtml#page_208"/></pageTarget>
+<pageTarget id="a319" type="normal" value="209"><navLabel><text>209</text></navLabel><content src="Text/16_Chapter07.xhtml#page_209"/></pageTarget>
+<pageTarget id="a320" type="normal" value="210"><navLabel><text>210</text></navLabel><content src="Text/16_Chapter07.xhtml#page_210"/></pageTarget>
+<pageTarget id="a321" type="normal" value="211"><navLabel><text>211</text></navLabel><content src="Text/16_Chapter07.xhtml#page_211"/></pageTarget>
+<pageTarget id="a322" type="normal" value="212"><navLabel><text>212</text></navLabel><content src="Text/16_Chapter07.xhtml#page_212"/></pageTarget>
+<pageTarget id="a323" type="normal" value="213"><navLabel><text>213</text></navLabel><content src="Text/16_Chapter07.xhtml#page_213"/></pageTarget>
+<pageTarget id="a324" type="normal" value="214"><navLabel><text>214</text></navLabel><content src="Text/16_Chapter07.xhtml#page_214"/></pageTarget>
+<pageTarget id="a325" type="normal" value="215"><navLabel><text>215</text></navLabel><content src="Text/16_Chapter07.xhtml#page_215"/></pageTarget>
+<pageTarget id="a326" type="normal" value="216"><navLabel><text>216</text></navLabel><content src="Text/16_Chapter07.xhtml#page_216"/></pageTarget>
+<pageTarget id="a327" type="normal" value="217"><navLabel><text>217</text></navLabel><content src="Text/16_Chapter07.xhtml#page_217"/></pageTarget>
+<pageTarget id="a328" type="normal" value="218"><navLabel><text>218</text></navLabel><content src="Text/16_Chapter07.xhtml#page_218"/></pageTarget>
+<pageTarget id="a329" type="normal" value="219"><navLabel><text>219</text></navLabel><content src="Text/16_Chapter07.xhtml#page_219"/></pageTarget>
+<pageTarget id="a330" type="normal" value="220"><navLabel><text>220</text></navLabel><content src="Text/16_Chapter07.xhtml#page_220"/></pageTarget>
+<pageTarget id="a331" type="normal" value="221"><navLabel><text>221</text></navLabel><content src="Text/16_Chapter07.xhtml#page_221"/></pageTarget>
+<pageTarget id="a332" type="normal" value="222"><navLabel><text>222</text></navLabel><content src="Text/16_Chapter07.xhtml#page_222"/></pageTarget>
+<pageTarget id="a333" type="normal" value="223"><navLabel><text>223</text></navLabel><content src="Text/16_Chapter07.xhtml#page_223"/></pageTarget>
+<pageTarget id="a334" type="normal" value="224"><navLabel><text>224</text></navLabel><content src="Text/16_Chapter07.xhtml#page_224"/></pageTarget>
+<pageTarget id="a335" type="normal" value="225"><navLabel><text>225</text></navLabel><content src="Text/16_Chapter07.xhtml#page_225"/></pageTarget>
+<pageTarget id="a336" type="normal" value="226"><navLabel><text>226</text></navLabel><content src="Text/16_Chapter07.xhtml#page_226"/></pageTarget>
+<pageTarget id="a337" type="normal" value="227"><navLabel><text>227</text></navLabel><content src="Text/16_Chapter07.xhtml#page_227"/></pageTarget>
+<pageTarget id="a338" type="normal" value="229"><navLabel><text>229</text></navLabel><content src="Text/22_Acknowledgments.xhtml#page_229"/></pageTarget>
+<pageTarget id="a339" type="normal" value="230"><navLabel><text>230</text></navLabel><content src="Text/22_Acknowledgments.xhtml#page_230"/></pageTarget>
+<pageTarget id="a341" type="normal" value="232"><navLabel><text>232</text></navLabel><content src="Text/19_Appendix-A.xhtml#page_232"/></pageTarget>
+<pageTarget id="a342" type="normal" value="233"><navLabel><text>233</text></navLabel><content src="Text/19_Appendix-A.xhtml#page_233"/></pageTarget>
+<pageTarget id="a344" type="normal" value="236"><navLabel><text>236</text></navLabel><content src="Text/20_Appendix-B.xhtml#page_236"/></pageTarget>
+<pageTarget id="a345" type="normal" value="237"><navLabel><text>237</text></navLabel><content src="Text/23_Contributors.xhtml#page_237"/></pageTarget>
+<pageTarget id="a346" type="normal" value="238"><navLabel><text>238</text></navLabel><content src="Text/23_Contributors.xhtml#page_238"/></pageTarget>
+<pageTarget id="a347" type="normal" value="239"><navLabel><text>239</text></navLabel><content src="Text/23_Contributors.xhtml#page_239"/></pageTarget>
+<pageTarget id="a348" type="normal" value="240"><navLabel><text>240</text></navLabel><content src="Text/23_Contributors.xhtml#page_240"/></pageTarget>
+<pageTarget id="a349" type="normal" value="241"><navLabel><text>241</text></navLabel><content src="Text/23_Contributors.xhtml#page_241"/></pageTarget>
+<pageTarget id="a350" type="normal" value="243"><navLabel><text>243</text></navLabel><content src="Text/25_Index.xhtml#page_243"/></pageTarget>
+<pageTarget id="a351" type="normal" value="244"><navLabel><text>244</text></navLabel><content src="Text/25_Index.xhtml#page_244"/></pageTarget>
+<pageTarget id="a352" type="normal" value="245"><navLabel><text>245</text></navLabel><content src="Text/25_Index.xhtml#page_245"/></pageTarget>
+<pageTarget id="a353" type="normal" value="246"><navLabel><text>246</text></navLabel><content src="Text/25_Index.xhtml#page_246"/></pageTarget>
+<pageTarget id="a354" type="normal" value="247"><navLabel><text>247</text></navLabel><content src="Text/25_Index.xhtml#page_247"/></pageTarget>
+<pageTarget id="a355" type="normal" value="248"><navLabel><text>248</text></navLabel><content src="Text/25_Index.xhtml#page_248"/></pageTarget>
+<pageTarget id="a356" type="normal" value="249"><navLabel><text>249</text></navLabel><content src="Text/25_Index.xhtml#page_249"/></pageTarget>
+<pageTarget id="a357" type="normal" value="250"><navLabel><text>250</text></navLabel><content src="Text/25_Index.xhtml#page_250"/></pageTarget>
+<pageTarget id="a358" type="normal" value="251"><navLabel><text>251</text></navLabel><content src="Text/25_Index.xhtml#page_251"/></pageTarget>
+<pageTarget id="a359" type="normal" value="252"><navLabel><text>252</text></navLabel><content src="Text/25_Index.xhtml#page_252"/></pageTarget>
+<pageTarget id="a360" type="normal" value="253"><navLabel><text>253</text></navLabel><content src="Text/24_Author.xhtml#page_253"/></pageTarget>
+<pageTarget id="a361" type="normal" value="254"><navLabel><text>254</text></navLabel><content src="Text/24_Author.xhtml#page_254"/></pageTarget>
+</pageList>
+</ncx>

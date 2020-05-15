@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="p9780393635331" version="3.0" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+<dc:title>The Only Business Writing Book You&#8217;ll Ever Need</dc:title>
+<dc:creator>Laura Brown</dc:creator>
+<dc:identifier id="p9780393635331">9780393635331</dc:identifier>
+<dc:publisher>W. W. Norton &#38; Company</dc:publisher>
+<dc:language>en</dc:language>
+<dc:type>Text</dc:type>
+<dc:format>266 Pages</dc:format>
+<dc:rights>Copyright &#169; 2019 by Laura Brown</dc:rights>
+<dc:date>2018-12-05</dc:date>
+<meta name="cover" content="my-cover-image"/>
+<meta property="dcterms:modified">2018-12-05T12:00:00Z</meta>
+<meta property="rendition:layout">reflowable</meta>
+<meta property="rendition:orientation">auto</meta>
+<meta property="ibooks:specified-fonts">true</meta>
+<meta property="rendition:spread">auto</meta>
+</metadata>
+<manifest>
+<item id="toc" href="Text/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+
+
+<item href="Styles/stylesheet.css" id="css" media-type="text/css"/>
+
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="tooltip.js" href="Js/tooltip.js" media-type="text/javascript"/>
+<item id="X00_Cover" href="Text/00_Cover.xhtml" media-type="application/xhtml+xml"/>
+<item id="X01" href="Text/01_Also.xhtml" media-type="application/xhtml+xml"/>
+<item id="X02" href="Text/02_Title.xhtml" media-type="application/xhtml+xml"/>
+<item id="X04" href="Text/04_Copyright.xhtml" media-type="application/xhtml+xml"/>
+<item id="X05" href="Text/05_Dedication.xhtml" media-type="application/xhtml+xml"/>
+<item id="X06" href="Text/06_Contents.xhtml" media-type="application/xhtml+xml"/>
+<item id="X07" href="Text/07_Foreword.xhtml" media-type="application/xhtml+xml"/>
+<item id="X08" href="Text/08_Preface.xhtml" media-type="application/xhtml+xml"/>
+<item id="X09" href="Text/09_Introduction.xhtml" media-type="application/xhtml+xml"/>
+<item id="X10" href="Text/10_Chapter01.xhtml" media-type="application/xhtml+xml"/>
+<item id="X11" href="Text/11_Chapter02.xhtml" media-type="application/xhtml+xml"/>
+<item id="X12" href="Text/12_Chapter03.xhtml" media-type="application/xhtml+xml"/>
+<item id="X13" href="Text/13_Chapter04.xhtml" media-type="application/xhtml+xml"/>
+<item id="X14" href="Text/14_Chapter05.xhtml" media-type="application/xhtml+xml"/>
+<item id="X15" href="Text/15_Chapter06.xhtml" media-type="application/xhtml+xml"/>
+<item id="X16" href="Text/16_Chapter07.xhtml" media-type="application/xhtml+xml"/>
+<item id="X17" href="Text/17_Chapter08.xhtml" media-type="application/xhtml+xml"/>
+<item id="X18" href="Text/18_Chapter09.xhtml" media-type="application/xhtml+xml"/>
+<item id="X20" href="Text/19_Appendix-A.xhtml" media-type="application/xhtml+xml"/>
+<item id="X21" href="Text/20_Appendix-B.xhtml" media-type="application/xhtml+xml"/>
+<item id="X22" href="Text/21_Appendix-C.xhtml" media-type="application/xhtml+xml"/>
+<item id="X19" href="Text/22_Acknowledgments.xhtml" media-type="application/xhtml+xml"/>
+<item id="X23" href="Text/23_Contributors.xhtml" media-type="application/xhtml+xml"/>
+<item id="X25" href="Text/24_Author.xhtml" media-type="application/xhtml+xml"/>
+<item id="X24" href="Text/25_Index.xhtml" media-type="application/xhtml+xml"/>
+<item id="my-cover-image" href="Images/cover.jpg" media-type="image/jpeg"/>
+<item id="image1" href="Images/bull.jpg" media-type="image/jpeg"/>
+<item id="image2" href="Images/common.jpg" media-type="image/jpeg"/>
+<item id="image3" href="Images/common1.jpg" media-type="image/jpeg"/>
+<item id="image3a" href="Images/common2.jpg" media-type="image/jpeg"/>
+<item id="image4" href="Images/f0005-01.jpg" media-type="image/jpeg"/>
+<item id="image5" href="Images/box.jpg" media-type="image/jpeg"/>
+<item id="image6" href="Images/f0124-01.jpg" media-type="image/jpeg"/>
+<item id="image7" href="Images/f0124-02.jpg" media-type="image/jpeg"/>
+<item id="image8" href="Images/f0125-01.jpg" media-type="image/jpeg"/>
+<item id="image9" href="Images/f0125-02.jpg" media-type="image/jpeg"/>
+<item id="image10" href="Images/f0126-01.jpg" media-type="image/jpeg"/>
+<item id="image11" href="Images/f0126-02.jpg" media-type="image/jpeg"/>
+<item id="image12" href="Images/f0127-01.jpg" media-type="image/jpeg"/>
+<item id="image13" href="Images/f0127-02.jpg" media-type="image/jpeg"/>
+<item id="image14" href="Images/logo.jpg" media-type="image/jpeg"/>
+</manifest>
+<spine toc="ncx">
+<itemref idref="X00_Cover" linear="no"/>
+<itemref idref="X02" linear="yes"/>
+<itemref idref="X04"/>
+<itemref idref="X05"/>
+<itemref idref="X06"/>
+<itemref idref="X07"/>
+<itemref idref="X08"/>
+<itemref idref="X09"/>
+<itemref idref="X10"/>
+<itemref idref="X11"/>
+<itemref idref="X12"/>
+<itemref idref="X13"/>
+<itemref idref="X14"/>
+<itemref idref="X15"/>
+<itemref idref="X16"/>
+<itemref idref="X17"/>
+<itemref idref="X18"/>
+<itemref idref="X19"/>
+<itemref idref="X20"/>
+<itemref idref="X21"/>
+<itemref idref="X22"/>
+<itemref idref="X23"/>
+<itemref idref="X24"/>
+<itemref idref="X25"/>
+<itemref idref="X01"/>
+</spine>
+<guide>
+<reference href="Text/00_Cover.xhtml" title="Cover" type="cover"/>
+<reference href="Text/02_Title.xhtml" title="Title" type="title-page"/>
+<reference href="Text/06_Contents.xhtml" title="Contents" type="toc"/>
+</guide>
+</package>
