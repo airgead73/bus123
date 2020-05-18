@@ -1,0 +1,94 @@
+/* CSS to control show hide behavior. Do not change */
+
+[role='tooltip'][aria-hidden='true'] {
+  display: none;
+}
+
+[role='tooltip'][aria-hidden='false'] {
+  display: block;
+  position: absolute;
+  left: -150px;
+  z-index: 4600;
+}
+
+[data-tooltip='container'] {
+  position: relative
+}
+
+/* CSS for trigger and tooltip content styles. Ok to change */
+
+/* all tips */
+
+.tooltip-trigger {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.tooltip-trigger:hover {
+  cursor: pointer;
+}
+
+.tooltip-display {
+  font-style: normal;
+  font-weight: normal;
+  padding: 8px 12px;
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* arrow */
+.tooltip-display::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+   z-index: 4600;   
+}
+
+/* Custom styles for adjusting colors, font styles, etc. */
+
+/* primary */
+
+.tooltip-trigger.primary {
+  color: darkslategray;
+}
+
+.tooltip-display.primary {
+  background-color: darkslategray;
+  color: white;
+}
+
+/* arrow */
+.tooltip-display.primary::after {
+  border-color: darkslategray transparent transparent transparent;  
+}
+
+/* secondary */
+
+.tooltip-trigger.secondary {
+  color: maroon;
+}
+
+.tooltip-trigger.secondary::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color:maroon;
+  margin-left: 3px;
+  margin-right: 2px;  
+}
+
+.tooltip-display.secondary {
+  background-color: maroon;
+  color: white;
+}
+
+/* arrow */
+.tooltip-display.secondary::after {
+  border-color: maroon transparent transparent transparent;  
+}
