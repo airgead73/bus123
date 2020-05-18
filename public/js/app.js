@@ -1,7 +1,6 @@
 (function() {
-  var tooltipsList = document.querySelectorAll("[id^='tooltip']");
-  var tooltips = Array.prototype.slice.call(tooltipsList);
-  var tooltipCount = tooltips.length;
+  var tooltipsArr = Array.prototype.slice.call(document.querySelectorAll("[id^='tooltip']"));
+  var tooltipCount = tooltipsArr.length;
   var i;
 
   function createTooltip(_contentID, text) {
@@ -88,9 +87,9 @@
       return;
     }
    
-    for(i = 0; i < tooltipCount; i++) {
-      initTriggers(tooltips[i]);
-    }
+    tooltipsArr.forEach(function(tooltip) {
+      initTriggers(tooltip);
+    })
 
     setEsc();
     
