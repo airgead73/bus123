@@ -6,6 +6,9 @@ data-tooltip="content"
 
 *****************************
 
-classes
+markup
 
-.tootip.primary
+<span id="tooltip3-1" class="tooltip-bold" title="Shorthand for &#8220;the next steps we might take.&#8221;">
+  <span data-tooltip="trigger">next steps<sup>1</sup></span>
+  <span id="tooltip-content3-1" role="tootip" aria-hidden="false">Shorthand for "the next steps we might take."</span>
+</span>
