@@ -4,8 +4,6 @@
   var tooltipCount = tooltips.length;
   var i;
 
-  console.log(tooltipCount)
-  
   function createTooltip(_contentID, text) {
 
     var tooltipDisplay = document.createElement('span');

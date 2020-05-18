@@ -3,7 +3,7 @@
   var tooltips = Array.prototype.slice.call(tooltipsList);
   var tooltipCount = tooltips.length;
   var i;
-  
+
   function createTooltip(_contentID, text) {
 
     var tooltipDisplay = document.createElement('span');
@@ -13,13 +13,13 @@
     tooltipDisplay.setAttribute('role', 'tooltip');
     tooltipDisplay.setAttribute('aria-hidden', true);
 
-    tooltipDisplay.append(tooltipText);
+    tooltipDisplay.appendChild(tooltipText);
     return tooltipDisplay;
     
   }
 
   function setY(_content) {
-    var y = "-" + (_content.offsetHeight + 5) + 'px';
+    var y = "-" + (_content.offsetHeight + 10) + 'px';
     _content.style.top = y;
 
   }

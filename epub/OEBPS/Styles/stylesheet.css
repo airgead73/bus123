@@ -2394,6 +2394,8 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
   z-index: 4600;
 }
 
+/* tooltip arrow */
+
 [id^='tooltip-content'][aria-hidden='false']::after {
   content: "";
   position: absolute;
@@ -2406,8 +2408,9 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
   z-index: 4600; 
 }
 
+/* tooltip trigger icon */
 
-[aria-describedby]::before {
+/* [aria-describedby]::before {
   content: '';
   display: inline-block;
   width: 10px;
@@ -2415,7 +2418,7 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
   background-color:darkslategray;
   margin-left: 3px;
   margin-right: 2px;
-}
+} */
 
 [aria-describedby]:hover {
   cursor: pointer;
