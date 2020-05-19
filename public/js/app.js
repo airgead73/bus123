@@ -1,13 +1,35 @@
 (function() {
 
   var config = {
+    ORIENTATION: 'landscape',
+    OS: '',
     CONTAINER_SELECTOR: '[data-tooltip="container"]',
     TRIGGER_SELECTOR: '[data-tooltip="trigger"]',
     DISPLAY_SELECTOR: 'tooltip-display',
+    GET_ORIENTATION: function() {
+      return this.ORIENTATION;
+    }, 
+    // SET_ORIENTATION: function() {
+      
+    // },
+    GET_OS: function() {
+      return this.OS;
+    },
+    SET_OS: function() {
+      this.OS = window.clientInformation.userAgent;
+      return this.OS;
+    },
     GET_CONTAINERS: function() {
       var containerNodeList = document.querySelectorAll(this.CONTAINER_SELECTOR);
       var containerArr = Array.prototype.slice.call(containerNodeList);
       return containerArr;
+    },
+    SET_AP_POS: function(_tooltipContent) {
+      var inlineStyle = this.DISPLAY_AP_STYLE;
+      var x = "left: -160px;";
+      var y = "top: -" + (_tooltipContent.offsetHeight + 10) + 'px;';
+      inlineStyle = x + " " + y;    
+      _tooltipContent.setAttribute("style", inlineStyle);
     }
   }
 
@@ -20,6 +42,8 @@
   }
  
   function initToolTips() {
+
+    alert(config.SET_OS());
 
     var containers = config.GET_CONTAINERS();
 
@@ -87,8 +111,8 @@
     var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
     if(isHidden) {
       handleOpenTips();    
-      currentDisplay.setAttribute('aria-hidden', false);
-      setY(currentDisplay);
+      currentDisplay.setAttribute("aria-hidden", false);
+      config.SET_AP_POS(currentDisplay);
     } else if(!isHidden) {
       currentDisplay.setAttribute('aria-hidden', true);
     }  
@@ -103,12 +127,6 @@
       return;
     }
   }
-
-  function setY(_content) {
-    var y = "-" + (_content.offsetHeight + 10) + 'px';
-    _content.style.top = y;
-
-  }  
 
   function setEsc() {
     document.addEventListener('keydown', function(e) {
