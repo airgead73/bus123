@@ -9,16 +9,6 @@
     GET_ORIENTATION: function() {
       return this.ORIENTATION;
     }, 
-    // SET_ORIENTATION: function() {
-      
-    // },
-    GET_OS: function() {
-      return this.OS;
-    },
-    SET_OS: function() {
-      this.OS = window.clientInformation.userAgent;
-      return this.OS;
-    },
     GET_CONTAINERS: function() {
       var containerNodeList = document.querySelectorAll(this.CONTAINER_SELECTOR);
       var containerArr = Array.prototype.slice.call(containerNodeList);
@@ -38,12 +28,16 @@
       Object.keys(attrs).forEach(function (attr) {
         el.setAttribute(attr, attrs[attr]);
       });      
+    },
+    getOS: function() {
+      os = navigator.userAgent;
+      return os;      
     }
   }
  
   function initToolTips() {
 
-    alert(config.SET_OS());
+    alert(util.getOS());
 
     var containers = config.GET_CONTAINERS();
 
