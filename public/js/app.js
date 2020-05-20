@@ -1,8 +1,6 @@
 (function() {
 
   var config = {
-    ORIENTATION: 'landscape',
-    OS: '',
     CONTAINER_SELECTOR: '[data-tooltip="container"]',
     TRIGGER_SELECTOR: '[data-tooltip="trigger"]',
     DISPLAY_SELECTOR: 'tooltip-display',
@@ -18,14 +16,13 @@
       var os = util.getOS();
       var inlineStyle;
       if(os === 'desktop') {
-        // var x = "left: -160px;";
-        // var y = "top: -" + (_tooltipContent.offsetHeight + 10) + 'px;';
-        // inlineStyle = x + " " + y;    
-        // _tooltipContent.setAttribute("style", inlineStyle);
-        inlineStyle = "position: fixed; top: 30%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
+        var x = "left: -160px;";
+        var y = "top: -" + (_tooltipContent.offsetHeight + 10) + 'px;';
+        inlineStyle = x + " " + y;    
         _tooltipContent.setAttribute("style", inlineStyle);
       } else {
-        
+        inlineStyle = "position: fixed; top: 30%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
+        _tooltipContent.setAttribute("style", inlineStyle);        
       }
 
     }
