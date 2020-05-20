@@ -31,7 +31,17 @@
     },
     getOS: function() {
       os = navigator.userAgent;
-      return os;      
+
+      if(/android/i.test(os)) {
+        return "android";
+      }
+
+      if(/iPad|iPhone|iPod/i.test(os)) {
+        return "ios";
+      }
+
+      return "desktop";
+         
     }
   }
  
