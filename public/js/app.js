@@ -14,12 +14,20 @@
       var containerArr = Array.prototype.slice.call(containerNodeList);
       return containerArr;
     },
-    SET_AP_POS: function(_tooltipContent) {
-      var inlineStyle = this.DISPLAY_AP_STYLE;
-      var x = "left: -160px;";
-      var y = "top: -" + (_tooltipContent.offsetHeight + 10) + 'px;';
-      inlineStyle = x + " " + y;    
-      _tooltipContent.setAttribute("style", inlineStyle);
+    SET_POS: function(_tooltipContent) {
+      var os = util.getOS();
+      var inlineStyle;
+      if(os === 'desktop') {
+        // var x = "left: -160px;";
+        // var y = "top: -" + (_tooltipContent.offsetHeight + 10) + 'px;';
+        // inlineStyle = x + " " + y;    
+        // _tooltipContent.setAttribute("style", inlineStyle);
+        inlineStyle = "position: fixed; top: 30%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
+        _tooltipContent.setAttribute("style", inlineStyle);
+      } else {
+        
+      }
+
     }
   }
 
@@ -47,7 +55,7 @@
  
   function initToolTips() {
 
-    alert(util.getOS());
+    
 
     var containers = config.GET_CONTAINERS();
 
@@ -123,7 +131,7 @@
     if(isHidden) {
       handleOpenTips();    
       currentDisplay.setAttribute("aria-hidden", false);
-      config.SET_AP_POS(currentDisplay);
+      config.SET_POS(currentDisplay);
     } else if(!isHidden) {
       currentDisplay.setAttribute('aria-hidden', true);
     }  
