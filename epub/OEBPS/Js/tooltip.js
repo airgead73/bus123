@@ -4,10 +4,27 @@
     CONTAINER_SELECTOR: '[data-tooltip="container"]',
     TRIGGER_SELECTOR: '[data-tooltip="trigger"]',
     DISPLAY_SELECTOR: 'tooltip-display',
+    GET_ORIENTATION: function() {
+      return this.ORIENTATION;
+    }, 
     GET_CONTAINERS: function() {
       var containerNodeList = document.querySelectorAll(this.CONTAINER_SELECTOR);
       var containerArr = Array.prototype.slice.call(containerNodeList);
       return containerArr;
+    },
+    SET_POS: function(_tooltipContent) {
+      var os = util.getOS();
+      var inlineStyle;
+      if(os === 'desktop') {
+        var x = "left: -150px;";
+        var y = "top: -" + (_tooltipContent.offsetHeight + 10) + 'px;';
+        inlineStyle = x + " " + y;    
+        _tooltipContent.setAttribute("style", inlineStyle);
+      } else {
+        inlineStyle = "position: fixed; top: 5%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
+        _tooltipContent.setAttribute("style", inlineStyle);        
+      }
+
     }
   }
 
@@ -16,10 +33,26 @@
       Object.keys(attrs).forEach(function (attr) {
         el.setAttribute(attr, attrs[attr]);
       });      
+    },
+    getOS: function() {
+      os = navigator.userAgent;
+
+      if(/android/i.test(os)) {
+        return "android";
+      }
+
+      if(/iPad|iPhone|iPod/i.test(os)) {
+        return "ios";
+      }
+
+      return "desktop";
+         
     }
   }
  
   function initToolTips() {
+
+    
 
     var containers = config.GET_CONTAINERS();
 
@@ -54,9 +87,15 @@
       handleDisplay(e, idStr);
     });
 
-    tooltipTrigger.addEventListener('keydown', function(e) {
-      if(e.keyCode === 13)
+    tooltipTrigger.addEventListener('blur', function(e) {
       handleDisplay(e, idStr);
+    });    
+
+    tooltipTrigger.addEventListener('keydown', function(e) {
+      if(e.keyCode === 13) {
+        handleDisplay(e, idStr);
+      }
+      
     });
 
     // adjust container attributes
@@ -85,10 +124,14 @@
   function handleDisplay(_event, _displayID) {
     var currentDisplay = document.getElementById(_displayID);
     var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
+    if(_event.type === 'blur') {
+      currentDisplay.setAttribute('aria-hidden', true);
+      return;
+    }
     if(isHidden) {
       handleOpenTips();    
-      currentDisplay.setAttribute('aria-hidden', false);
-      setY(currentDisplay);
+      currentDisplay.setAttribute("aria-hidden", false);
+      config.SET_POS(currentDisplay);
     } else if(!isHidden) {
       currentDisplay.setAttribute('aria-hidden', true);
     }  
@@ -104,17 +147,11 @@
     }
   }
 
-  function setY(_content) {
-    var y = "-" + (_content.offsetHeight + 10) + 'px';
-    _content.style.top = y;
-
-  }  
-
   function setEsc() {
     document.addEventListener('keydown', function(e) {
       if(e.keyCode === 27) {
         handleOpenTips();
-      }
+      } 
     })
   }
 

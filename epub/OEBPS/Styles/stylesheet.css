@@ -2376,13 +2376,12 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
 
 [role='tooltip'][aria-hidden='false'] {
   display: block;
-  position: absolute;
-  left: -150px;
   z-index: 4600;
+  position: absolute;
 }
 
 [data-tooltip='container'] {
-  position: relative
+  position: relative;
 }
 
 /* CSS for trigger and tooltip content styles. Ok to change */
@@ -2402,7 +2401,7 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
   font-style: normal;
   font-weight: normal;
   padding: 8px 12px;
-  width: 300px;
+  width: 280px;
   text-align: center;
   border-radius: 8px;
 }
@@ -2424,6 +2423,7 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
 /* primary */
 
 .tooltip-trigger.primary {
+  margin-left: -3px;
   color: darkslategray;
 }
 
