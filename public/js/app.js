@@ -4,9 +4,6 @@
     CONTAINER_SELECTOR: '[data-tooltip="container"]',
     TRIGGER_SELECTOR: '[data-tooltip="trigger"]',
     DISPLAY_SELECTOR: 'tooltip-display',
-    GET_ORIENTATION: function() {
-      return this.ORIENTATION;
-    }, 
     GET_CONTAINERS: function() {
       var containerNodeList = document.querySelectorAll(this.CONTAINER_SELECTOR);
       var containerArr = Array.prototype.slice.call(containerNodeList);

@@ -4,18 +4,17 @@
     CONTAINER_SELECTOR: '[data-tooltip="container"]',
     TRIGGER_SELECTOR: '[data-tooltip="trigger"]',
     DISPLAY_SELECTOR: 'tooltip-display',
-    GET_ORIENTATION: function() {
-      return this.ORIENTATION;
-    }, 
     GET_CONTAINERS: function() {
       var containerNodeList = document.querySelectorAll(this.CONTAINER_SELECTOR);
       var containerArr = Array.prototype.slice.call(containerNodeList);
       return containerArr;
     },
     SET_POS: function(_tooltipContent) {
-      var os = util.getOS();
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      console.log("height: " + h + " width: " + w + ".");
       var inlineStyle;
-      if(os === 'desktop') {
+      if(w > h) {
         var x = "left: -150px;";
         var y = "top: -" + (_tooltipContent.offsetHeight + 10) + 'px;';
         inlineStyle = x + " " + y;    
