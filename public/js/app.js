@@ -13,15 +13,17 @@
       return containerArr;
     },
     SET_POS: function(_tooltipContent) {
-      var os = util.getOS();
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      console.log("height: " + h + " width: " + w + ".");
       var inlineStyle;
-      if(os === 'desktop') {
+      if(w > h) {
         var x = "left: -150px;";
         var y = "top: -" + (_tooltipContent.offsetHeight + 10) + 'px;';
         inlineStyle = x + " " + y;    
         _tooltipContent.setAttribute("style", inlineStyle);
       } else {
-        inlineStyle = "position: fixed; top: 5%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
+        inlineStyle = "position: fixed; top: 10%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
         _tooltipContent.setAttribute("style", inlineStyle);        
       }
 
