@@ -21,7 +21,7 @@
         inlineStyle = x + " " + y;    
         _tooltipContent.setAttribute("style", inlineStyle);
       } else {
-        inlineStyle = "position: fixed; top: 5%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
+        inlineStyle = "position: fixed; top: 10%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
         _tooltipContent.setAttribute("style", inlineStyle);        
       }
 
