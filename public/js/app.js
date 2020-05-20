@@ -82,6 +82,10 @@
       handleDisplay(e, idStr);
     });
 
+    tooltipTrigger.addEventListener('blur', function(e) {
+      handleDisplay(e, idStr);
+    });    
+
     tooltipTrigger.addEventListener('keydown', function(e) {
       if(e.keyCode === 13)
       handleDisplay(e, idStr);
@@ -113,6 +117,9 @@
   function handleDisplay(_event, _displayID) {
     var currentDisplay = document.getElementById(_displayID);
     var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
+    if(_event.type === 'blur') {
+      currentDisplay.setAttribute('aria-hidden', true);
+    }
     if(isHidden) {
       handleOpenTips();    
       currentDisplay.setAttribute("aria-hidden", false);
