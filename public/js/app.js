@@ -147,7 +147,7 @@
       inlineStyle = config.GET_POS_AP(paramDisplayEl);   
       paramDisplayEl.setAttribute("style", inlineStyle);
     } else {
-      inlineStyle = config.GET_POS_FIXED;
+      inlineStyle = config.GET_POS_FIXED();
       paramDisplayEl.setAttribute("style", inlineStyle);        
     }    
   }
