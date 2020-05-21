@@ -4,9 +4,6 @@
     CONTAINER_SELECTOR: '[data-tooltip="container"]',
     TRIGGER_SELECTOR: '[data-tooltip="trigger"]',
     DISPLAY_SELECTOR: 'tooltip-display',
-    GET_ORIENTATION: function() {
-      return this.ORIENTATION;
-    }, 
     GET_CONTAINERS: function() {
       var containerNodeList = document.querySelectorAll(this.CONTAINER_SELECTOR);
       var containerArr = Array.prototype.slice.call(containerNodeList);
@@ -24,7 +21,6 @@
         inlineStyle = "position: fixed; top: 5%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
         _tooltipContent.setAttribute("style", inlineStyle);        
       }
-
     }
   }
 
@@ -50,9 +46,7 @@
     }
   }
  
-  function initToolTips() {
-
-    
+  function initToolTips() {    
 
     var containers = config.GET_CONTAINERS();
 
@@ -70,19 +64,19 @@
   }
 
   function initContainer(_container, _counter) {
-    // init tooltip trigger (add eventlistener)
     var tooltipTrigger = _container.querySelector(config.TRIGGER_SELECTOR);
     var idStr = "tooltip_" + _counter;
     var classStr = tooltipTrigger.className;
     classStr = classStr.split(' ');
     classStr = config.DISPLAY_SELECTOR + " " + classStr[1];
 
-
+    // adjust trigger attributes
     util.setAttributes(tooltipTrigger, {
       "tabindex": "0",
-      "aria-describedby": "tooltip_" + _counter
+      "aria-describedby": idStr
     }); 
 
+    // apply event listeners to trigger
     tooltipTrigger.addEventListener('click', function(e) {
       handleDisplay(e, idStr);
     });
@@ -92,10 +86,9 @@
     });    
 
     tooltipTrigger.addEventListener('keydown', function(e) {
-      if(e.keyCode === 13) {
+      if(e.keyCode === 13 || e.keyCode === 32) {
         handleDisplay(e, idStr);
-      }
-      
+      }      
     });
 
     // adjust container attributes
