@@ -39,9 +39,11 @@
 
 /* CSS for trigger and tooltip content styles. Ok to change */
 
+/* primary */
 .primary [data-tooltip='trigger'] {
   /* tooltip trigger */
-  font-style: italic;
+  font-style: normal;
+  font-weight: bold;
   color: darkslategray;
   margin-left: -3px;
 }

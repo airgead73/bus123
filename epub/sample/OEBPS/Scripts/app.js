@@ -78,16 +78,16 @@
 
     // apply event listeners to trigger
     paramTriggerEl.addEventListener('click', function(e) {
-      handleDisplay(e, paramTargetStr);
+      handleEvent(e, paramTargetStr);
     });
 
     paramTriggerEl.addEventListener('blur', function(e) {
-      handleDisplay(e, paramTargetStr);
+      handleEvent(e, paramTargetStr);
     });    
 
     paramTriggerEl.addEventListener('keydown', function(e) {
       if(e.keyCode === 13 || e.keyCode === 32) {
-        handleDisplay(e, paramTargetStr);
+        handleEvent(e, paramTargetStr);
       }      
     });
   }
@@ -114,7 +114,7 @@
     return tooltipDisplay;
   }
 
-  function handleDisplay(paramEvent, paramIdStr) {
+  function handleEvent(paramEvent, paramIdStr) {
     var currentDisplay = document.getElementById(paramIdStr);
     var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
     if(paramEvent.type === 'blur') {
@@ -123,7 +123,7 @@
     }
     if(isHidden) {
       handleOpenTips();    
-      currentDisplay.setAttribute("aria-hidden", false);
+      currentDisplay.setAttribute('aria-hidden', false);
       setPOS(currentDisplay);
     } else if(!isHidden) {
       currentDisplay.setAttribute('aria-hidden', true);
@@ -131,7 +131,7 @@
   }
 
   function handleOpenTips() {
-    var openTip = document.querySelector("[aria-hidden='false']");
+    var openTip = document.querySelector('[aria-hidden="false"]');
     if(openTip) {
       openTip.setAttribute('aria-hidden', true);
       return;
