@@ -16,7 +16,8 @@
     <item href="Text/test-01.html" id="test-01" media-type="application/xhtml+xml" />
 	  <item href="Text/nav.html" id="nav" properties="nav" media-type="application/xhtml+xml" />
     <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
-	  <item href="Styles/2.1-upperlevelmodern.css" id="x2.1-upperlevelmodern.css" media-type="text/css" />   
+	  <item href="Styles/2.1-upperlevelmodern.css" id="x2.1-upperlevelmodern.css" media-type="text/css" />  
+    <item href="Styles/0.0-test.css" id="x0.0-test.css" media-type="text/css" /> 
     <item href="Styles/750.css" id="x750.css" media-type="text/css" />
     <item href="Scripts/app.js" id="app.js" media-type="text/javascript"/>
     	
