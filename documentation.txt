@@ -11,7 +11,6 @@ data-tooltip="content"
 
 *****************************
 
-<span data-tooltip="container" title="Shorthand for &#8220;the next steps we might take.&#8221;">
-  <span class="tooltip-trigger primary" data-tooltip="trigger" aria-describedby="tooltip-content3-1"><sup>1</sup></span>
-  <span id="tt-content3-1" class="tooltip-display primary" role="tooltip" aria-hidden="true">Shorthand for "the next steps we might take."</span>
+<span class="tooltip-container primary" data-tooltip="container" title="">
+  <span data-tooltip="trigger"><sup>1</sup></span>  
 </span>
