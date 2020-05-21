@@ -39,8 +39,8 @@
 
 /* CSS for trigger and tooltip content styles. Ok to change */
 
-/* primary */
-.primary [data-tooltip='trigger'] {
+/* standard */
+.standard [data-tooltip='trigger'] {
   /* tooltip trigger */
   font-style: normal;
   font-weight: bold;
@@ -48,14 +48,14 @@
   margin-left: -3px;
 }
 
-.primary [role='tooltip'] {
+.standard [role='tooltip'] {
   /* tooltip display */
   text-align: center;
   color: white;
   background-color: darkslategray;
 }
 
-.primary [role='tooltip']::after {
+.standard [role='tooltip']::after {
   /* arrow at bottom of tooltip display */
   border-color: darkslategray transparent transparent transparent;    
 }
