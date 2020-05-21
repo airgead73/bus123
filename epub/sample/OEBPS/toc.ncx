@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta content="urn:uuid:7536EB79-979A-473F-A5EE-83C9B4F09516" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>General Test</text>
+  </docTitle>
+<navMap>
+
+<navPoint id="test1-0" playOrder="1"><navLabel><text>Test</text></navLabel><content src="Text/test-01.html#test1-0"/>
+	<navPoint id="test1-1" playOrder="2"><navLabel><text>Test 1.1</text></navLabel><content src="Text/test-01.html#test1-1"/></navPoint>
+</navPoint>
+
+ </navMap>
+</ncx>
