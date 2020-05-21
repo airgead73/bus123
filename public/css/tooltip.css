@@ -42,7 +42,7 @@
 .primary [data-tooltip='trigger'] {
   /* tooltip trigger */
   font-style: italic;
-  color: darkorange;
+  color: blue;
   margin-left: -3px;
 }
 
@@ -50,11 +50,11 @@
   /* tooltip display */
   text-align: center;
   color: white;
-  background-color: darkorange;
+  background-color: blue;
 }
 
 .primary [role='tooltip']::after {
   /* arrow at bottom of tooltip display */
-  border-color: darkorange transparent transparent transparent;    
+  border-color: blue transparent transparent transparent;    
 }
 
