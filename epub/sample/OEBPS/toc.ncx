@@ -12,7 +12,8 @@
 <navMap>
 
 <navPoint id="test1-0" playOrder="1"><navLabel><text>Test</text></navLabel><content src="Text/test-01.html#test1-0"/>
-	<navPoint id="test1-1" playOrder="2"><navLabel><text>Test 1.1</text></navLabel><content src="Text/test-01.html#test1-1"/></navPoint>
+	<navPoint id="test1-1" playOrder="2"><navLabel><text>Standard</text></navLabel><content src="Text/test-01.html#test1-1"/></navPoint>
+  <navPoint id="test1-2" playOrder="3"><navLabel><text>Outline</text></navLabel><content src="Text/test-01.html#test1-2"/></navPoint>
 </navPoint>
 
  </navMap>

@@ -85,3 +85,53 @@
   border-color: darkslategray transparent transparent transparent;    
 }
 
+/* underline */
+
+.underline [data-tooltip='trigger'] {
+  /* tooltip trigger */
+  font-style: normal;
+  font-weight: bold;
+  color: darkred;
+  border-bottom: 1px dotted darkred;
+}
+
+.underline [data-tooltip='trigger']:hover {
+  border-bottom-style: solid;
+}
+
+.underline [role='tooltip'] {
+  /* tooltip display */
+  text-align: center;
+  color: white;
+  background-color: darkred;
+}
+
+.underline [role='tooltip']::after {
+  /* arrow at bottom of tooltip display */
+  border-color: darkred transparent transparent transparent;    
+}
+
+/* square */
+
+.square [data-tooltip='trigger'] {
+  /* tooltip trigger */
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: -2px;
+  margin-right: 4px;
+  background-color: darkgreen;
+}
+
+.square [role='tooltip'] {
+  /* tooltip display */
+  text-align: center;
+  color: white;
+  background-color: darkgreen;
+}
+
+.square [role='tooltip']::after {
+  /* arrow at bottom of tooltip display */
+  border-color: darkgreen transparent transparent transparent;    
+}
+
