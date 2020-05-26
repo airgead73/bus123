@@ -2368,46 +2368,28 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
   padding: 0;
 }
 
+/* TOOLTIP */
 /* CSS to control show hide behavior. Do not change */
-
-[role='tooltip'][aria-hidden='true'] {
-  display: none;
-}
-
-[role='tooltip'][aria-hidden='false'] {
-  display: block;
-  z-index: 4600;
-  position: absolute;
-}
 
 [data-tooltip='container'] {
   position: relative;
 }
 
-/* CSS for trigger and tooltip content styles. Ok to change */
-
-/* all tips */
-
-.tooltip-trigger {
-  font-style: italic;
-  font-weight: bold;
-}
-
-.tooltip-trigger:hover {
+[data-tooltip='trigger'] {
   cursor: pointer;
 }
 
-.tooltip-display {
-  font-style: normal;
-  font-weight: normal;
+[role='tooltip'] {
+  z-index: 4600;
+  position: absolute;
   padding: 8px 12px;
   width: 280px;
-  text-align: center;
   border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
-/* arrow */
-.tooltip-display::after {
+[role='tooltip']::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -2418,47 +2400,34 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
    z-index: 4600;   
 }
 
-/* Custom styles for adjusting colors, font styles, etc. */
+[role='tooltip'][aria-hidden='true'] {
+  display: none;
+}
 
-/* primary */
+[role='tooltip'][aria-hidden='false'] {
+  display: block;
+}
 
-.tooltip-trigger.primary {
-  margin-left: -3px;
+/* CSS for trigger and tooltip content styles. Ok to change */
+
+/* standard */
+
+.standard [data-tooltip='trigger'] {
+  /* tooltip trigger */
+  font-style: normal;
+  font-weight: bold;
   color: darkslategray;
+  margin-left: -3px;
 }
 
-.tooltip-display.primary {
+.standard [role='tooltip'] {
+  /* tooltip display */
+  text-align: center;
+  color: white;
   background-color: darkslategray;
-  color: white;
 }
 
-/* arrow */
-.tooltip-display.primary::after {
-  border-color: darkslategray transparent transparent transparent;  
-}
-
-/* secondary */
-
-.tooltip-trigger.secondary {
-  color: maroon;
-}
-
-.tooltip-trigger.secondary::before {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color:maroon;
-  margin-left: 3px;
-  margin-right: 2px;  
-}
-
-.tooltip-display.secondary {
-  background-color: maroon;
-  color: white;
-}
-
-/* arrow */
-.tooltip-display.secondary::after {
-  border-color: maroon transparent transparent transparent;  
+.standard [role='tooltip']::after {
+  /* arrow at bottom of tooltip display */
+  border-color: darkslategray transparent transparent transparent;    
 }

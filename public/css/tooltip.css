@@ -1,3 +1,4 @@
+/* TOOLTIP */
 /* CSS to control show hide behavior. Do not change */
 
 [data-tooltip='container'] {
@@ -39,9 +40,9 @@
 
 /* CSS for trigger and tooltip content styles. Ok to change */
 
-/* primary */
+/* standard */
 
-.primary [data-tooltip='trigger'] {
+.standard [data-tooltip='trigger'] {
   /* tooltip trigger */
   font-style: normal;
   font-weight: bold;
@@ -49,14 +50,14 @@
   margin-left: -3px;
 }
 
-.primary [role='tooltip'] {
+.standard [role='tooltip'] {
   /* tooltip display */
   text-align: center;
   color: white;
   background-color: darkslategray;
 }
 
-.primary [role='tooltip']::after {
+.standard [role='tooltip']::after {
   /* arrow at bottom of tooltip display */
   border-color: darkslategray transparent transparent transparent;    
 }

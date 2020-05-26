@@ -1,4 +1,5 @@
 (function() {
+  'use strict'
 
   var config = {
     CONTAINER_SELECTOR: '[data-tooltip="container"]',
@@ -12,20 +13,20 @@
     GET_POS_FIXED: function() {
       return "position: fixed; top: 8%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
     },
-    GET_POS_AP: function(paramEl) {
-      var ap = "postion: absolute; top: -" + (paramEl.offsetHeight + 10) + 'px; left: -150px;';
+    GET_POS_AP: function(el) {
+      var ap = "postion: absolute; top: -" + (el.offsetHeight + 10) + 'px; left: -150px;';
       return ap;
     }    
   }
 
   var util = {
-    setAttributes: function(paramEl, paramAttrsObj) {
-      Object.keys(paramAttrsObj).forEach(function (attr) {
-        paramEl.setAttribute(attr, paramAttrsObj[attr]);
+    setAttributes: function(el, objAttrs) {
+      Object.keys(objAttrs).forEach(function (attr) {
+        el.setAttribute(attr, objAttrs[attr]);
       });      
     },
     getOS: function() {
-      os = navigator.userAgent;
+      var os = navigator.userAgent;
 
       if(/android/i.test(os)) {
         return "android";
@@ -57,56 +58,56 @@
     
   }
 
-  function setComponents(paramElContainer, paramNumCounter) {
-    var tooltipTrigger = paramElContainer.querySelector(config.TRIGGER_SELECTOR);
-    var idStr = "tooltip_" + paramNumCounter;
+  function setComponents(elContainer, numCounter) {
+    var tooltipTrigger = elContainer.querySelector(config.TRIGGER_SELECTOR);
+    var strId = "tooltip_" + numCounter;
 
     // SET TRIGGER
-    setTrigger(tooltipTrigger, idStr);
+    setTrigger(tooltipTrigger, strId);
 
     // SET DISPLAY
-    setDisplay(paramElContainer, paramNumCounter);
+    setDisplay(elContainer, numCounter);
 
   }
 
-  function setTrigger(paramTriggerEl, paramTargetStr) {
+  function setTrigger(elTrigger, strTrigger) {
     // adjust trigger attributes
-    util.setAttributes(paramTriggerEl, {
+    util.setAttributes(elTrigger, {
       "tabindex": "0",
-      "aria-describedby": paramTargetStr
+      "aria-describedby": strTrigger
     }); 
 
     // apply event listeners to trigger
-    paramTriggerEl.addEventListener('click', function(e) {
-      handleDisplay(e, paramTargetStr);
+    elTrigger.addEventListener('click', function(e) {
+      handleDisplay(e, strTrigger);
     });
 
-    paramTriggerEl.addEventListener('blur', function(e) {
-      handleDisplay(e, paramTargetStr);
+    elTrigger.addEventListener('blur', function(e) {
+      handleDisplay(e, strTrigger);
     });    
 
-    paramTriggerEl.addEventListener('keydown', function(e) {
+    elTrigger.addEventListener('keydown', function(e) {
       if(e.keyCode === 13 || e.keyCode === 32) {
-        handleDisplay(e, paramTargetStr);
+        handleDisplay(e, strTrigger);
       }      
     });
   }
 
-  function setDisplay(paramContainerEl, paramCounterNum) {
+  function setDisplay(elContainer, numCounter) {
     // adjust container attributes
-    var text = paramContainerEl.getAttribute('title').trim(); 
-    paramContainerEl.removeAttribute('title');
+    var text = elContainer.getAttribute('title').trim(); 
+    elContainer.removeAttribute('title');
     
     // create tooltip content and append to container
-    var tooltipContent = createTooltip(paramCounterNum, text);
-    paramContainerEl.appendChild(tooltipContent);
+    var tooltipContent = createTooltip(numCounter, text);
+    elContainer.appendChild(tooltipContent);
   }
 
-  function createTooltip(paramCounterNum, _text) {
+  function createTooltip(numCounter, strText) {
     var tooltipDisplay = document.createElement('span');
-    var tooltipText = document.createTextNode(_text);
+    var tooltipText = document.createTextNode(strText);
     util.setAttributes(tooltipDisplay, {
-      "id": "tooltip_" + paramCounterNum,
+      "id": "tooltip_" + numCounter,
       "role": "tooltip",
       "aria-hidden": true
     });
@@ -114,10 +115,10 @@
     return tooltipDisplay;
   }
 
-  function handleDisplay(paramEvent, paramIdStr) {
-    var currentDisplay = document.getElementById(paramIdStr);
+  function handleDisplay(evt, strId) {
+    var currentDisplay = document.getElementById(strId);
     var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
-    if(paramEvent.type === 'blur') {
+    if(evt.type === 'blur') {
       currentDisplay.setAttribute('aria-hidden', true);
       return;
     }
@@ -140,15 +141,15 @@
     }
   }
 
-  function setPOS(paramDisplayEl) {
+  function setPOS(elDisplay) {
     var os = util.getOS();
     var inlineStyle;
     if(os === 'desktop') {
-      inlineStyle = config.GET_POS_AP(paramDisplayEl);   
-      paramDisplayEl.setAttribute("style", inlineStyle);
+      inlineStyle = config.GET_POS_AP(elDisplay);   
+      elDisplay.setAttribute("style", inlineStyle);
     } else {
       inlineStyle = config.GET_POS_FIXED();
-      paramDisplayEl.setAttribute("style", inlineStyle);        
+      elDisplay.setAttribute("style", inlineStyle);        
     }    
   }
 

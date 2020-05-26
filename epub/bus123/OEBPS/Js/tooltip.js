@@ -1,41 +1,32 @@
 (function() {
+  'use strict'
 
   var config = {
     CONTAINER_SELECTOR: '[data-tooltip="container"]',
     TRIGGER_SELECTOR: '[data-tooltip="trigger"]',
-    DISPLAY_SELECTOR: 'tooltip-display',
-    GET_ORIENTATION: function() {
-      return this.ORIENTATION;
-    }, 
     GET_CONTAINERS: function() {
-      var containerNodeList = document.querySelectorAll(this.CONTAINER_SELECTOR);
-      var containerArr = Array.prototype.slice.call(containerNodeList);
+      var containerArr = Array.prototype.slice.call(
+        document.querySelectorAll(this.CONTAINER_SELECTOR)
+      );
       return containerArr;
     },
-    SET_POS: function(_tooltipContent) {
-      var os = util.getOS();
-      var inlineStyle;
-      if(os === 'desktop') {
-        var x = "left: -150px;";
-        var y = "top: -" + (_tooltipContent.offsetHeight + 10) + 'px;';
-        inlineStyle = x + " " + y;    
-        _tooltipContent.setAttribute("style", inlineStyle);
-      } else {
-        inlineStyle = "position: fixed; top: 10%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
-        _tooltipContent.setAttribute("style", inlineStyle);        
-      }
-
-    }
+    GET_POS_FIXED: function() {
+      return "position: fixed; top: 8%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
+    },
+    GET_POS_AP: function(el) {
+      var ap = "postion: absolute; top: -" + (el.offsetHeight + 10) + 'px; left: -150px;';
+      return ap;
+    }    
   }
 
   var util = {
-    setAttributes: function(el, attrs) {
-      Object.keys(attrs).forEach(function (attr) {
-        el.setAttribute(attr, attrs[attr]);
+    setAttributes: function(el, objAttrs) {
+      Object.keys(objAttrs).forEach(function (attr) {
+        el.setAttribute(attr, objAttrs[attr]);
       });      
     },
     getOS: function() {
-      os = navigator.userAgent;
+      var os = navigator.userAgent;
 
       if(/android/i.test(os)) {
         return "android";
@@ -50,9 +41,7 @@
     }
   }
  
-  function initToolTips() {
-
-    
+  function initToolTips() {    
 
     var containers = config.GET_CONTAINERS();
 
@@ -62,58 +51,63 @@
 
     containers.forEach(function(container, index) {
       var counter = index + 1;
-      initContainer(container, counter);
+      setComponents(container, counter);
     });
 
     setEsc();
     
   }
 
-  function initContainer(_container, _counter) {
-    // init tooltip trigger (add eventlistener)
-    var tooltipTrigger = _container.querySelector(config.TRIGGER_SELECTOR);
-    var idStr = "tooltip_" + _counter;
-    var classStr = tooltipTrigger.className;
-    classStr = classStr.split(' ');
-    classStr = config.DISPLAY_SELECTOR + " " + classStr[1];
+  function setComponents(elContainer, numCounter) {
+    var tooltipTrigger = elContainer.querySelector(config.TRIGGER_SELECTOR);
+    var strId = "tooltip_" + numCounter;
 
+    // SET TRIGGER
+    setTrigger(tooltipTrigger, strId);
 
-    util.setAttributes(tooltipTrigger, {
-      "tabindex": "0",
-      "aria-describedby": "tooltip_" + _counter
-    }); 
-
-    tooltipTrigger.addEventListener('click', function(e) {
-      handleDisplay(e, idStr);
-    });
-
-    tooltipTrigger.addEventListener('blur', function(e) {
-      handleDisplay(e, idStr);
-    });    
-
-    tooltipTrigger.addEventListener('keydown', function(e) {
-      if(e.keyCode === 13) {
-        handleDisplay(e, idStr);
-      }
-      
-    });
-
-    // adjust container attributes
-    var text = _container.getAttribute('title').trim(); 
-    _container.removeAttribute('title');
-    
-    // create tooltip content and append to container
-    var tooltipContent = createTooltip(_counter, text, classStr);
-    _container.appendChild(tooltipContent);
+    // SET DISPLAY
+    setDisplay(elContainer, numCounter);
 
   }
 
-  function createTooltip(_counter, _text, _classStr) {
+  function setTrigger(elTrigger, strTrigger) {
+    // adjust trigger attributes
+    util.setAttributes(elTrigger, {
+      "tabindex": "0",
+      "aria-describedby": strTrigger
+    }); 
+
+    // apply event listeners to trigger
+    elTrigger.addEventListener('click', function(e) {
+      handleDisplay(e, strTrigger);
+    });
+
+    elTrigger.addEventListener('blur', function(e) {
+      handleDisplay(e, strTrigger);
+    });    
+
+    elTrigger.addEventListener('keydown', function(e) {
+      if(e.keyCode === 13 || e.keyCode === 32) {
+        handleDisplay(e, strTrigger);
+      }      
+    });
+  }
+
+  function setDisplay(elContainer, numCounter) {
+    // adjust container attributes
+    var text = elContainer.getAttribute('title').trim(); 
+    elContainer.removeAttribute('title');
+    
+    // create tooltip content and append to container
+    var tooltipContent = createTooltip(numCounter, text);
+    elContainer.appendChild(tooltipContent);
+  }
+
+  function createTooltip(numCounter, strText) {
     var tooltipDisplay = document.createElement('span');
-    var tooltipText = document.createTextNode(_text);
+    var tooltipText = document.createTextNode(strText);
     util.setAttributes(tooltipDisplay, {
-      "id": "tooltip_" + _counter,
-      "class": _classStr,
+      "id": "tooltip_" + numCounter,
       "role": "tooltip",
       "aria-hidden": true
     });
@@ -121,17 +115,17 @@
     return tooltipDisplay;
   }
 
-  function handleDisplay(_event, _displayID) {
-    var currentDisplay = document.getElementById(_displayID);
+  function handleDisplay(evt, strId) {
+    var currentDisplay = document.getElementById(strId);
     var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
-    if(_event.type === 'blur') {
+    if(evt.type === 'blur') {
       currentDisplay.setAttribute('aria-hidden', true);
       return;
     }
     if(isHidden) {
       handleOpenTips();    
       currentDisplay.setAttribute("aria-hidden", false);
-      config.SET_POS(currentDisplay);
+      setPOS(currentDisplay);
     } else if(!isHidden) {
       currentDisplay.setAttribute('aria-hidden', true);
     }  
@@ -145,6 +139,18 @@
     } else {
       return;
     }
+  }
+
+  function setPOS(elDisplay) {
+    var os = util.getOS();
+    var inlineStyle;
+    if(os === 'desktop') {
+      inlineStyle = config.GET_POS_AP(elDisplay);   
+      elDisplay.setAttribute("style", inlineStyle);
+    } else {
+      inlineStyle = config.GET_POS_FIXED();
+      elDisplay.setAttribute("style", inlineStyle);        
+    }    
   }
 
   function setEsc() {
@@ -162,3 +168,10 @@
   initToolTips();
 
 })();
+
+
+
+
+
+
+
