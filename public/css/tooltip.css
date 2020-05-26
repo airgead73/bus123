@@ -62,3 +62,26 @@
   border-color: darkslategray transparent transparent transparent;    
 }
 
+/* outline */
+
+.outline [data-tooltip='trigger'] {
+  /* tooltip trigger */
+  font-style: italic;
+  font-weight: bold;
+  color: darkslategray;
+  margin-left: -3px;
+}
+
+.outline [role='tooltip'] {
+  /* tooltip display */
+  text-align: center;
+  color: darkslategray;
+  background-color: white;
+  border: 2px solid darkslategray;
+}
+
+.outline [role='tooltip']::after {
+  /* arrow at bottom of tooltip display */
+  border-color: darkslategray transparent transparent transparent;    
+}
+
