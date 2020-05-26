@@ -136,3 +136,29 @@
   border-color: darkgreen transparent transparent transparent;    
 }
 
+/* square */
+
+.circle [data-tooltip='trigger']::after {
+  /* tooltip trigger */
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: -2px;
+  margin-right: 4px;
+  background-color: slategray;
+}
+
+.circle [role='tooltip'] {
+  /* tooltip display */
+  text-align: center;
+  color: white;
+  background-color: slategray;
+}
+
+.circle [role='tooltip']::after {
+  /* arrow at bottom of tooltip display */
+  border-color: slategray transparent transparent transparent;    
+}
+
