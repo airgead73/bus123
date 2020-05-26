@@ -113,9 +113,10 @@
 
 /* square */
 
-.square [data-tooltip='trigger'] {
+.square [data-tooltip='trigger']::after {
   /* tooltip trigger */
   display: inline-block;
+  content: '';
   width: 10px;
   height: 10px;
   margin-left: -2px;
