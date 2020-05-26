@@ -93,7 +93,7 @@
   }
 
   function setDisplay(paramContainerEl, paramCounterNum) {
-    // adjust container attributes
+    // pull text content from container element
     var text = paramContainerEl.getAttribute('title').trim(); 
     paramContainerEl.removeAttribute('title');
     
