@@ -14,7 +14,7 @@
       return "position: fixed; top: 8%; right: 0; left: 0; margin-right: auto; margin-left: auto;";
     },
     GET_POS_AP: function(el) {
-      var ap = "postion: absolute; top: -" + (el.offsetHeight + 10) + 'px; left: -150px;';
+      var ap = "position: absolute; top: -" + (el.offsetHeight + 10) + 'px; left: -150px;';
       return ap;
     }    
   }

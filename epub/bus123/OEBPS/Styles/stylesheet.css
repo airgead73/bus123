@@ -2412,7 +2412,7 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
 
 /* standard */
 
-.standard [data-tooltip='trigger'] {
+.tooltip-container.standard [data-tooltip='trigger'] {
   /* tooltip trigger */
   font-style: normal;
   font-weight: bold;
@@ -2420,14 +2420,14 @@ h1, h2, h3, h4, h5, h6, div, p, ol, ul, li, table, tr, th, td, blockquote, dl, d
   margin-left: -3px;
 }
 
-.standard [role='tooltip'] {
+.tooltip-container.standard [role='tooltip'] {
   /* tooltip display */
   text-align: center;
   color: white;
   background-color: darkslategray;
 }
 
-.standard [role='tooltip']::after {
+.tooltip-container.standard [role='tooltip']::after {
   /* arrow at bottom of tooltip display */
   border-color: darkslategray transparent transparent transparent;    
 }
