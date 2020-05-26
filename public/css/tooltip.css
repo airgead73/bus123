@@ -147,18 +147,18 @@
   border-radius: 50%;
   margin-left: -2px;
   margin-right: 4px;
-  background-color: slategray;
+  background-color: darkslategray;
 }
 
 .circle [role='tooltip'] {
   /* tooltip display */
   text-align: center;
   color: white;
-  background-color: slategray;
+  background-color: darkslategray;
 }
 
 .circle [role='tooltip']::after {
   /* arrow at bottom of tooltip display */
-  border-color: slategray transparent transparent transparent;    
+  border-color: darkslategray transparent transparent transparent;    
 }
 
