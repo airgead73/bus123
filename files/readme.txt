@@ -43,7 +43,7 @@ TOOLTIP WIDGET
 
   In order to accomodate IE10, es6 methods and syntax have been avoided. 
 
-  The widget has been tested on Chrome, Firefox, IE10 and Edge 15. 
+  The widget has been tested on Chrome, Firefox, IE10, Edge 15, iOS, and Android. 
 
 5. CSS 
 
