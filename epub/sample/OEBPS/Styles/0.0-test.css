@@ -1,3 +1,4 @@
+/* TOOLTIP */
 /* CSS to control show hide behavior. Do not change */
 
 [data-tooltip='container'] {
@@ -40,6 +41,7 @@
 /* CSS for trigger and tooltip content styles. Ok to change */
 
 /* standard */
+
 .standard [data-tooltip='trigger'] {
   /* tooltip trigger */
   font-style: normal;
@@ -60,3 +62,105 @@
   border-color: darkslategray transparent transparent transparent;    
 }
 
+/* Options */
+/* Additional CSS options for trigger and tooltip content styles. Ok to change */
+
+/* success */
+
+.success [data-tooltip='trigger'] {
+  /* tooltip trigger */
+  font-style: normal;
+  font-weight: bold;
+  color: green;
+  margin-left: -3px;
+}
+
+.success [role='tooltip'] {
+  /* tooltip display */
+  text-align: center;
+  color: white;
+  background-color: green;
+}
+
+.success [role='tooltip']::after {
+  /* arrow at bottom of tooltip display */
+  border-color: green transparent transparent transparent;    
+}
+
+/* underline */
+
+.underline [data-tooltip='trigger'] {
+  /* tooltip trigger */
+  font-style: normal;
+  font-weight: bold;
+  color: darkred;
+  border-bottom: 1px dotted darkred;
+}
+
+.underline [data-tooltip='trigger']:hover {
+  border-bottom-style: solid;
+}
+
+.underline [role='tooltip'] {
+  /* tooltip display */
+  text-align: center;
+  color: white;
+  background-color: darkred;
+}
+
+.underline [role='tooltip']::after {
+  /* arrow at bottom of tooltip display */
+  border-color: darkred transparent transparent transparent;    
+}
+
+/* square */
+
+.square [data-tooltip='trigger']::after {
+  /* tooltip trigger */
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  margin-left: -2px;
+  margin-right: 3px;
+  background-color: darkslateblue;
+}
+
+.square [role='tooltip'] {
+  /* tooltip display */
+  text-align: center;
+  color: white;
+  background-color: darkslateblue;
+}
+
+.square [role='tooltip']::after {
+  /* arrow at bottom of tooltip display */
+  border-color: darkslateblue transparent transparent transparent;    
+}
+
+/* circle */
+
+.circle [data-tooltip='trigger']::after {
+  /* tooltip trigger */
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: -2px;
+  margin-right: 3px;
+  background-color: orangered;
+}
+
+.circle [role='tooltip'] {
+  /* tooltip display */
+  text-align: center;
+  color: white;
+  background-color: orangered;
+  border-radius: 25px;
+}
+
+.circle [role='tooltip']::after {
+  /* arrow at bottom of tooltip display */
+  border-color: orangered transparent transparent transparent;    
+}

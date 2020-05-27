@@ -62,27 +62,29 @@
   border-color: darkslategray transparent transparent transparent;    
 }
 
-/* outline */
+/* Options */
+/* Additional CSS options for trigger and tooltip content styles. Ok to change */
 
-.outline [data-tooltip='trigger'] {
+/* success */
+
+.success [data-tooltip='trigger'] {
   /* tooltip trigger */
-  font-style: italic;
+  font-style: normal;
   font-weight: bold;
-  color: darkslategray;
+  color: green;
   margin-left: -3px;
 }
 
-.outline [role='tooltip'] {
+.success [role='tooltip'] {
   /* tooltip display */
   text-align: center;
-  color: darkslategray;
-  background-color: white;
-  border: 2px solid darkslategray;
+  color: white;
+  background-color: green;
 }
 
-.outline [role='tooltip']::after {
+.success [role='tooltip']::after {
   /* arrow at bottom of tooltip display */
-  border-color: darkslategray transparent transparent transparent;    
+  border-color: green transparent transparent transparent;    
 }
 
 /* underline */
@@ -121,22 +123,22 @@
   height: 10px;
   margin-left: -2px;
   margin-right: 4px;
-  background-color: darkgreen;
+  background-color: darkslateblue;
 }
 
 .square [role='tooltip'] {
   /* tooltip display */
   text-align: center;
   color: white;
-  background-color: darkgreen;
+  background-color: darkslateblue;
 }
 
 .square [role='tooltip']::after {
   /* arrow at bottom of tooltip display */
-  border-color: darkgreen transparent transparent transparent;    
+  border-color: darkslateblue transparent transparent transparent;    
 }
 
-/* square */
+/* circle */
 
 .circle [data-tooltip='trigger']::after {
   /* tooltip trigger */
@@ -147,18 +149,19 @@
   border-radius: 50%;
   margin-left: -2px;
   margin-right: 4px;
-  background-color: darkslategray;
+  background-color: orangered;
 }
 
 .circle [role='tooltip'] {
   /* tooltip display */
   text-align: center;
   color: white;
-  background-color: darkslategray;
+  background-color: orangered;
+  border-radius: 25px;
 }
 
 .circle [role='tooltip']::after {
   /* arrow at bottom of tooltip display */
-  border-color: darkslategray transparent transparent transparent;    
+  border-color: orangered transparent transparent transparent;    
 }
 

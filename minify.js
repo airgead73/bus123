@@ -4,7 +4,7 @@ const gcc = require('@node-minify/google-closure-compiler');
 const uglifyJS = require('@node-minify/uglify-js')
 
 minify({
-  compressor: gcc,
+  compressor: uglifyJS,
   input: 'public/js/app.js',
   output: 'public/js/app-min.js',
   callback: function(err, min) {

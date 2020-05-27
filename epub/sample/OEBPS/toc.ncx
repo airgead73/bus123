@@ -13,7 +13,10 @@
 
 <navPoint id="test1-0" playOrder="1"><navLabel><text>Test</text></navLabel><content src="Text/test-01.html#test1-0"/>
 	<navPoint id="test1-1" playOrder="2"><navLabel><text>Standard</text></navLabel><content src="Text/test-01.html#test1-1"/></navPoint>
-  <navPoint id="test1-2" playOrder="3"><navLabel><text>Outline</text></navLabel><content src="Text/test-01.html#test1-2"/></navPoint>
+  <navPoint id="test1-2" playOrder="3"><navLabel><text>Success</text></navLabel><content src="Text/test-01.html#test1-2"/></navPoint>
+  <navPoint id="test1-3" playOrder="4"><navLabel><text>Underline</text></navLabel><content src="Text/test-01.html#test1-3"/></navPoint>
+  <navPoint id="test1-4" playOrder="5"><navLabel><text>Square</text></navLabel><content src="Text/test-01.html#test1-4"/></navPoint>
+  <navPoint id="test1-5" playOrder="6"><navLabel><text>Circle</text></navLabel><content src="Text/test-01.html#test1-5"/></navPoint>
 </navPoint>
 
  </navMap>
