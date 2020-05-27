@@ -1,6 +1,23 @@
 (function() {
   'use strict'
 
+  /**
+   * TOOLTIP WIDGET
+   * 5-26-20
+   * On page load, script loops through tootip container elements and 
+   * creates tooltip content using the title attribute of the tooltip
+   * container. Also, the appropriate aria attributes are applied to the
+   * tooltips and triggers
+   * 
+   * Event listeners are added to each tooltip trigger, and the escape key. 
+   * On click of tooltip trigger, aria-hidden attribute on tooltip is toggled
+   * between true and false. In conjunction with css rules, tips are shown/hidden.
+   * 
+   * User can also tab to tooltip trigger. Hitting <return> key when trigger is 
+   * in focus will also toggle tip. Tabbing away from trigger will close tip. Also,
+   * hitting <esc> key will close any open tips. 
+   */
+
   var config = {
     CONTAINER_SELECTOR: '[data-tooltip="container"]',
     TRIGGER_SELECTOR: '[data-tooltip="trigger"]',
@@ -41,6 +58,11 @@
     }
   }
  
+  /**
+   * Get all tooltip containers using config method GET_CONTAINERS 
+   * and begin configuration for each tip and trigger.
+   * If page does not have any tips, script ends.
+   */
   function initToolTips() {    
 
     var containers = config.GET_CONTAINERS();
@@ -59,6 +81,14 @@
     
   }
 
+  /**
+   * setComponents
+   * @param {DOM element} elContainer from @func initTooltips
+   * @param {number} numCounter based on index from @func initTooltips
+   * @desc  Captures trigger inside tip container and fires @func setTrigger,
+   *        to configure trigger. Then, fires @func setDispay to create and 
+   *        set tip content.
+   */
   function setComponents(elContainer, numCounter) {
     var tooltipTrigger = elContainer.querySelector(config.TRIGGER_SELECTOR);
     var strId = "tooltip_" + numCounter;
@@ -71,6 +101,14 @@
 
   }
 
+  /**
+   * setTrigger
+   * @param {DOM element} elTrigger           
+   * @param {string} strTrigger Id of tip display container
+   * @desc  Adds attrs to trigger: tabindex and aria-describedby.
+   *        Also adds eventlisteners to trigger: click, blur, and
+   *        keydown.
+   */
   function setTrigger(elTrigger, strTrigger) {
     // adjust trigger attributes
     util.setAttributes(elTrigger, {
@@ -94,6 +132,14 @@
     });
   }
 
+  /**
+   * setDisplay
+   * @param {DOM element} elContainer 
+   * @param {number} numCounter 
+   * @desc  First, text of tooltip is captured from container's 
+   *        title attr is captured. Then, title attr is removed.
+   *        Lastly, invoke @func createTooltip with numCounter and text.
+   */
   function setDisplay(elContainer, numCounter) {
     // adjust container attributes
     var text = elContainer.getAttribute('title').trim(); 
@@ -104,6 +150,15 @@
     elContainer.appendChild(tooltipContent);
   }
 
+  /**
+   * createTooltip
+   * @param {number} numCounter 
+   * @param {string} strText 
+   * @return {DOM element} tooltipDisplay
+   * @desc  Using counter number and text, create DOM element for
+   *        tooltip content. Set attrs for element
+   * 
+   */
   function createTooltip(numCounter, strText) {
     var tooltipDisplay = document.createElement('span');
     var tooltipText = document.createTextNode(strText);
@@ -116,6 +171,14 @@
     return tooltipDisplay;
   }
 
+  /**
+   * handleDisplay
+   * @param {Event object} evt 
+   * @param {string} strId 
+   * @desc  Respond to click, blur, and keydown events. On click toggle
+   *        aria-hidden attr value.  Invoke @func handleOpenTips and
+   *        @func setPos to set position of tip.
+   */
   function handleDisplay(evt, strId) {
     var currentDisplay = document.getElementById(strId);
     var isHidden = currentDisplay.getAttribute('aria-hidden') === 'true';
@@ -132,6 +195,10 @@
     }  
   }
 
+  /**
+   * handleOpenTips
+   * @desc find any open tips and close them.
+   */
   function handleOpenTips() {
     var openTip = document.querySelector("[aria-hidden='false']");
     if(openTip) {
@@ -142,6 +209,14 @@
     }
   }
 
+  /**
+   * 
+   * @param {DOM element} elDisplay 
+   * @desc  Determine if user is iOs or Android to determine if user
+   *        is using mobile app. If mobile app, set position fixed 
+   *        near top of screen. If desktop, set position
+   *        above trigger.
+   */
   function setPOS(elDisplay) {
     var os = util.getOS();
     var inlineStyle;
@@ -154,6 +229,10 @@
     }    
   }
 
+  /**
+   * setEsc
+   * @desc Add eventlistener to <esc> key. Close any open tips.
+   */
   function setEsc() {
     document.addEventListener('keydown', function(e) {
       if(e.keyCode === 27) {
@@ -169,9 +248,3 @@
   initToolTips();
 
 })();
-
-
-
-
-
-

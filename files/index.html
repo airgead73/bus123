@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tooltip html markup</title>
+  <link rel="stylesheet" href="./tooltip.css">
+  <style>
+    body {
+      max-width: 900px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Initial markup -->
+  <p>I wanted to follow up on our meeting earlier today regarding next steps on pooling our talents
+    <span class="tooltip-container standard" data-tooltip="container"
+      title="Working together. Offers no evidence for how and what &#8220;talents&#8221; might be &#8220;pooled&#8221; or collected.">
+      <sup data-tooltip="trigger">1</sup>
+    </span>
+    to launch a media blitz for our new partnership.
+  </p>
+
+  <!--
+    When page loads, each tooltip container is dynamically changed as shown below. 
+    A new span is inserted into the container after the trigger element. 
+    The new span holds the tip content.
+
+    <span class="tooltip-container standard" data-tooltip="container">
+      <sup data-tooltip="trigger" tabindex="0" aria-describedby="tooltip_1">1</sup>
+      <span id="tooltip_1" role="tooltip" aria-hidden="true">
+        Working together. Offers no evidence for how and what &#8220;talents&#8221; might be &#8220;pooled&#8221; or collected.
+      </span>
+    </span> 
+  -->
+  <script type="text/javascript" src="./tooltip-min.js"></script>
+</body>
+
+</html>
